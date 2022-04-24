@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Longline Quart FREE';
+    src: url('../fonts/Longline-Quart-Display-Font/LonglineQuartFREE.woff') format('woff'),
+        url('../fonts/Longline-Quart-Display-Font/Longline\ Quart\ FREE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Variables */
+
+$color1 : white;
+$color2:black;
+$color3 :#E4B8AB;
+$color4:#D47964;
+$superposition1:rgba(184,148, 137, 0.8);
+$superposition2 :rgba(255,255,255,0.8);
+$padding :100px;
+
+/*BODY*/
+body{
+    font-family : 'Poppins', sans-serif;
+    // cursor: url(../img/circle.png), auto;
+    overflow-x: hidden ;
+    
+}
+
+/*TOPNAV*/
+.topnav {
+    background-color: $color3;
+    overflow: hidden;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        color: $color1;
+        text-align: center;
+        padding: 24px 14px;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+    }
+
+    #logo-header{
+        height: 80px;
+    }
+}
+
+.home-header{
+    background-image: url(../img/fond-header.png);
+     height: 627px;
+     margin-top: -4px;
+    padding-left: $padding;
+    padding-right: $padding;
+
+    
+        h1{
+            font-size: 70px;
+            color: $color4;
+            padding-top: 220px;
+            font-family: 'Longline Quart FREE';
+        }
+
+}
+
+.portfolio-header{
+    background-image: url(../img/fond-header-autre.png);
+    height: 203px;
+     margin-top: -4px;
+
+}
+
+
+/*Presentation*/
+.home-presentation{
+
+    height: 600px;
+    padding-left: $padding;
+    padding-right: $padding;
+    padding-top: 260px;
+
+    
+
+    h2{
+        font-size: 40px;
+        color: $color4;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        line-height: 1.8em;
+        font-size: 20px;
+    }
+
+    .portfolio-button{
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-width : 2px;
+        border-color: #707070;
+        margin-top: 20px;
+        padding: 10px;
+        text-transform: uppercase;
+        // cursor: url(../img/circle.png), pointer;
+    }
+}
+
+/*Projets*/
+
+.home-projects{
+
+
+    h2{
+        font-size: 50px;
+        font-family: 'Longline Quart FREE';
+        color: $color4;
+        text-align: center;
+    }
+
+    .underline-title{
+        width: 80px;
+        height: 3px;
+        background-color: $color4;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        
+    }
+/*Projet 1*/
+    .div-project{
+        background-color: $color3;
+        position: relative;
+        height: 85vh;
+        width: calc(100% + 50px);
+        margin: 0 0 0 -50px; 
+        padding: 0 50px 0 0;
+        transform: rotate( -3deg );
+        .div-project-content{
+            width: 100%;
+            .mockup-project{
+                display: flex;
+                justify-content: center;
+                #project1{
+                    display: block;
+                    position: absolute;
+                    z-index: 1;
+                    height: 90%;
+                    transform: rotate( 3deg );
+                    margin: auto;
+                }    
+            }
+            .right{
+                
+                 background-color: $superposition1;
+                height: 100%;
+                width: 50%;
+                display: flex;
+                right: 0;
+                position: absolute;
+                flex-direction: column;
+                z-index: 2;
+    
+                .right-content{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    transform: rotate( 3deg );
+
+    
+                    h3{
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 600;
+                        line-height: 2em;
+                    }
+    
+                    p{
+                        line-height: 1.5em;
+                        color: white;
+                        text-align: center;
+                    }
+    
+                    .portfolio-button{
+                        display: block;
+                        margin: auto;
+                        border-radius: 10px;
+                        text-align: center;
+                        background-color: transparent;
+                        color: white;
+                        border-width : 2px;
+                        border-color: white;
+                        margin-top: 20px;
+                        padding: 10px;
+                        text-transform: uppercase;
+                        // cursor: url(../img/circle.png), pointer;
+                    }
+    
+    
+                }
+    
+            }
+        }
+       
+    }
+ /*Projet2*/    
+    .div-project2{
+        background-color: white;
+        position: relative;
+        height: 85vh;
+        width: calc(100% + 50px);
+        margin: 0 0 0 -50px; 
+        padding: 0 50px 0 0;
+        transform: rotate( -3deg );
+        .div-project-content{
+            width: 100%;
+            .mockup-project{
+                display: flex;
+                justify-content: center;
+                #project1{
+                    display: block;
+                    position: absolute;
+                    z-index: 1;
+                    height: 90%;
+                    transform: rotate( 3deg );
+                    margin: auto;
+                }    
+            }
+            .right{
+                
+                 background-color: $superposition2;
+                height: 100%;
+                width: 50%;
+                display: flex;
+                right: 0;
+                position: absolute;
+                flex-direction: column;
+                z-index: 2;
+    
+                .right-content{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    transform: rotate( 3deg );
+
+    
+                    h3{
+                        color: black;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 600;
+                        line-height: 2em;
+                    }
+    
+                    p{
+                        line-height: 1.5em;
+                        color: black;
+                        text-align: center;
+                    }
+    
+                    .portfolio-button{
+                        display: block;
+                        margin: auto;
+                        border-radius: 10px;
+                        text-align: center;
+                        background-color: transparent;
+                        color: black;
+                        border-width : 2px;
+                        border-color: black;
+                        margin-top: 20px;
+                        padding: 10px;
+                        text-transform: uppercase;
+                        // cursor: url(../img/circle.png), pointer;
+                    }
+    
+    
+                }
+    
+            }
+        }
+
+       
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .home-presentation{
+
+        height: 600px;
+        padding-left: $padding;
+        padding-right: $padding;
+        padding-top: 100px;
+        margin-bottom: 200px;
+    }
+    .home-projects{
+
+        .div-project{
+            height: 105vh;
+            .div-project-content{
+                
+                .right{
+                
+                    height: 50%;
+                    width: 100%;
+                    bottom: 0px;
+                    .right-content{
+                       
+                    }  
+    
+                }
+            }
+        
+        }
+    }
+
+}
+
+

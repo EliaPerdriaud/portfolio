@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Longline Quart FREE';
+  src: url("../fonts/Longline-Quart-Display-Font/LonglineQuartFREE.woff") format("woff"), url("../fonts/Longline-Quart-Display-Font/Longline Quart FREE.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+/*BODY*/
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/*TOPNAV*/
+.topnav {
+  background-color: #E4B8AB;
+  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 24px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topnav #logo-header {
+  height: 80px;
+}
+
+.home-header {
+  background-image: url(../img/fond-header.png);
+  height: 627px;
+  margin-top: -4px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.home-header h1 {
+  font-size: 70px;
+  color: #D47964;
+  padding-top: 220px;
+  font-family: 'Longline Quart FREE';
+}
+
+.portfolio-header {
+  background-image: url(../img/fond-header-autre.png);
+  height: 203px;
+  margin-top: -4px;
+}
+
+/*Presentation*/
+.home-presentation {
+  height: 600px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 260px;
+}
+
+.home-presentation h2 {
+  font-size: 40px;
+  color: #D47964;
+  text-align: center;
+}
+
+.home-presentation p {
+  text-align: center;
+  line-height: 1.8em;
+  font-size: 20px;
+}
+
+.home-presentation .portfolio-button {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-width: 2px;
+  border-color: #707070;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/*Projets*/
+.home-projects {
+  /*Projet 1*/
+  /*Projet2*/
+}
+
+.home-projects h2 {
+  font-size: 50px;
+  font-family: 'Longline Quart FREE';
+  color: #D47964;
+  text-align: center;
+}
+
+.home-projects .underline-title {
+  width: 80px;
+  height: 3px;
+  background-color: #D47964;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.home-projects .div-project {
+  background-color: #E4B8AB;
+  position: relative;
+  height: 85vh;
+  width: calc(100% + 50px);
+  margin: 0 0 0 -50px;
+  padding: 0 50px 0 0;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.home-projects .div-project .div-project-content {
+  width: 100%;
+}
+
+.home-projects .div-project .div-project-content .mockup-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-projects .div-project .div-project-content .mockup-project #project1 {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 90%;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  margin: auto;
+}
+
+.home-projects .div-project .div-project-content .right {
+  background-color: rgba(184, 148, 137, 0.8);
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.home-projects .div-project .div-project-content .right .right-content {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.home-projects .div-project .div-project-content .right .right-content h3 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 2em;
+}
+
+.home-projects .div-project .div-project-content .right .right-content p {
+  line-height: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+.home-projects .div-project .div-project-content .right .right-content .portfolio-button {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border-width: 2px;
+  border-color: white;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.home-projects .div-project2 {
+  background-color: white;
+  position: relative;
+  height: 85vh;
+  width: calc(100% + 50px);
+  margin: 0 0 0 -50px;
+  padding: 0 50px 0 0;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.home-projects .div-project2 .div-project-content {
+  width: 100%;
+}
+
+.home-projects .div-project2 .div-project-content .mockup-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-projects .div-project2 .div-project-content .mockup-project #project1 {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 90%;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  margin: auto;
+}
+
+.home-projects .div-project2 .div-project-content .right {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.home-projects .div-project2 .div-project-content .right .right-content {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.home-projects .div-project2 .div-project-content .right .right-content h3 {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 2em;
+}
+
+.home-projects .div-project2 .div-project-content .right .right-content p {
+  line-height: 1.5em;
+  color: black;
+  text-align: center;
+}
+
+.home-projects .div-project2 .div-project-content .right .right-content .portfolio-button {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-width: 2px;
+  border-color: black;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 780px) {
+  .home-presentation {
+    height: 600px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    margin-bottom: 200px;
+  }
+  .home-projects .div-project {
+    height: 105vh;
+  }
+  .home-projects .div-project .div-project-content .right {
+    height: 50%;
+    width: 100%;
+    bottom: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
