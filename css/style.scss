@@ -88,10 +88,11 @@ body{
 /*Presentation*/
 .home-presentation{
 
-    height: 600px;
+    // height: 100vh;
     padding-left: $padding;
     padding-right: $padding;
     padding-top: 260px;
+    padding-bottom: 260px;
 
     
 
@@ -594,7 +595,7 @@ body{
 
         margin-bottom: 200px;
     }
-    .home-projects{
+    .projects{
 
         .div-project{
             height: 105vh;

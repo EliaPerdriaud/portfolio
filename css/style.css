@@ -71,42 +71,42 @@ body {
 /*Presentation*/
 /* line 89, style.scss */
 .home-presentation {
-  height: 600px;
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 260px;
+  padding-bottom: 260px;
 }
-/* line 98, style.scss */
+/* line 99, style.scss */
 .home-presentation h2 {
   font-size: 40px;
   color: #D47964;
   text-align: center;
 }
-/* line 104, style.scss */
+/* line 105, style.scss */
 .home-presentation .div-title-hover-effect {
   display: grid;
   place-content: center;
 }
-/* line 107, style.scss */
+/* line 108, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect {
   position: relative;
 }
-/* line 110, style.scss */
+/* line 111, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover {
   color: white;
   transition: transform .6s ease;
 }
-/* line 115, style.scss */
+/* line 116, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-/* line 120, style.scss */
+/* line 121, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-/* line 125, style.scss */
+/* line 126, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   content: " ";
   display: block;
@@ -120,13 +120,13 @@ body {
   z-index: -1;
   transition: transform .6s ease;
 }
-/* line 138, style.scss */
+/* line 139, style.scss */
 .home-presentation p {
   text-align: center;
   line-height: 1.8em;
   font-size: 20px;
 }
-/* line 144, style.scss */
+/* line 145, style.scss */
 .home-presentation .portfolio-button {
   display: block;
   margin: auto;
@@ -139,7 +139,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 157, style.scss */
+/* line 158, style.scss */
 .home-presentation .portfolio-button:hover {
   background-color: #D47964;
   color: white;
@@ -147,7 +147,7 @@ body {
 }
 
 /* ----------------------- Page a propos ----------------------- */
-/* line 172, style.scss */
+/* line 173, style.scss */
 .biographie {
   background-color: #E4B8AB;
   height: 60vh;
@@ -157,7 +157,7 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 181, style.scss */
+/* line 182, style.scss */
 .biographie h2 {
   transform: rotate(3deg);
   margin-left: 30px;
@@ -167,7 +167,7 @@ body {
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 191, style.scss */
+/* line 192, style.scss */
 .biographie h2::after {
   content: "";
   background-color: #D47964;
@@ -176,7 +176,7 @@ body {
   height: 3px;
   position: absolute;
 }
-/* line 201, style.scss */
+/* line 202, style.scss */
 .biographie p {
   transform: rotate(3deg);
   margin: 50px;
@@ -185,7 +185,7 @@ body {
   font-size: 17px;
 }
 
-/* line 211, style.scss */
+/* line 212, style.scss */
 .title-line {
   color: #D47964;
   justify-content: center;
@@ -193,7 +193,7 @@ body {
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 219, style.scss */
+/* line 220, style.scss */
 .title-line::after {
   content: "";
   background-color: #D47964;
@@ -203,13 +203,13 @@ body {
   position: absolute;
 }
 
-/* line 230, style.scss */
+/* line 231, style.scss */
 .timeline {
   margin: 50px auto;
   position: relative;
   max-width: 80em;
 }
-/* line 235, style.scss */
+/* line 236, style.scss */
 .timeline:before {
   background-color: #D47964;
   content: '';
@@ -221,11 +221,11 @@ body {
   height: 100%;
 }
 
-/* line 247, style.scss */
+/* line 248, style.scss */
 .timeline-event {
   position: relative;
 }
-/* line 252, style.scss */
+/* line 253, style.scss */
 .timeline-event:hover .timeline-event-icon {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -233,39 +233,39 @@ body {
   transform: rotate(-45deg);
   background-color: black;
 }
-/* line 257, style.scss */
+/* line 258, style.scss */
 .timeline-event:hover .timeline-event-thumbnail {
   -moz-box-shadow: inset 40em 0 0 0 black;
   -webkit-box-shadow: inset 40em 0 0 0 black;
   box-shadow: inset 40em 0 0 0 black;
 }
 
-/* line 263, style.scss */
+/* line 264, style.scss */
 .timeline-event-copy {
   padding: 2em;
   position: relative;
   top: -1.875em;
   left: 4em;
 }
-/* line 269, style.scss */
+/* line 270, style.scss */
 .timeline-event-copy h3 {
   font-size: 1.75em;
 }
-/* line 273, style.scss */
+/* line 274, style.scss */
 .timeline-event-copy h4 {
   font-size: 1.2em;
   margin-bottom: 1.2em;
 }
-/* line 278, style.scss */
+/* line 279, style.scss */
 .timeline-event-copy strong {
   font-weight: 700;
 }
-/* line 282, style.scss */
+/* line 283, style.scss */
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
   padding-bottom: 1.2em;
 }
 
-/* line 287, style.scss */
+/* line 288, style.scss */
 .timeline-event-icon {
   -moz-transition: -moz-transform 0.2s ease-in;
   -o-transition: -o-transform 0.2s ease-in;
@@ -286,7 +286,7 @@ body {
   height: 1em;
 }
 
-/* line 302, style.scss */
+/* line 303, style.scss */
 .timeline-event-thumbnail {
   -moz-transition: box-shadow 0.5s ease-in 0.1s;
   -o-transition: box-shadow 0.5s ease-in 0.1s;
@@ -305,12 +305,12 @@ body {
 }
 
 /* ----------------------- Projets ----------------------- */
-/* line 317, style.scss */
+/* line 318, style.scss */
 .projects {
   /*Projet 1*/
   /*Projet2*/
 }
-/* line 320, style.scss */
+/* line 321, style.scss */
 .projects h2 {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
@@ -318,7 +318,7 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-/* line 328, style.scss */
+/* line 329, style.scss */
 .projects .underline-title {
   width: 80px;
   height: 3px;
@@ -327,7 +327,7 @@ body {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 338, style.scss */
+/* line 339, style.scss */
 .projects .div-project {
   background-color: #E4B8AB;
   position: relative;
@@ -337,16 +337,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 346, style.scss */
+/* line 347, style.scss */
 .projects .div-project .div-project-content {
   width: 100%;
 }
-/* line 348, style.scss */
+/* line 349, style.scss */
 .projects .div-project .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 351, style.scss */
+/* line 352, style.scss */
 .projects .div-project .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -355,7 +355,7 @@ body {
   transform: rotate(3deg);
   margin: auto;
 }
-/* line 360, style.scss */
+/* line 361, style.scss */
 .projects .div-project .div-project-content .right {
   background-color: rgba(184, 148, 137, 0.8);
   height: 100%;
@@ -366,7 +366,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 371, style.scss */
+/* line 372, style.scss */
 .projects .div-project .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -374,7 +374,7 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 379, style.scss */
+/* line 380, style.scss */
 .projects .div-project .div-project-content .right .right-content h3 {
   color: white;
   text-transform: uppercase;
@@ -383,13 +383,13 @@ body {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 388, style.scss */
+/* line 389, style.scss */
 .projects .div-project .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: white;
   text-align: center;
 }
-/* line 394, style.scss */
+/* line 395, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -403,13 +403,13 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 408, style.scss */
+/* line 409, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button:hover {
   background-color: white;
   color: #D47964;
   transition: 0.5s;
 }
-/* line 424, style.scss */
+/* line 425, style.scss */
 .projects .div-project2 {
   background-color: white;
   position: relative;
@@ -419,16 +419,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 432, style.scss */
+/* line 433, style.scss */
 .projects .div-project2 .div-project-content {
   width: 100%;
 }
-/* line 434, style.scss */
+/* line 435, style.scss */
 .projects .div-project2 .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 437, style.scss */
+/* line 438, style.scss */
 .projects .div-project2 .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -437,7 +437,7 @@ body {
   transform: rotate(3deg);
   margin: auto;
 }
-/* line 446, style.scss */
+/* line 447, style.scss */
 .projects .div-project2 .div-project-content .right {
   background-color: rgba(255, 255, 255, 0.8);
   height: 100%;
@@ -448,7 +448,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 457, style.scss */
+/* line 458, style.scss */
 .projects .div-project2 .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -456,7 +456,7 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 465, style.scss */
+/* line 466, style.scss */
 .projects .div-project2 .div-project-content .right .right-content h3 {
   color: black;
   text-transform: uppercase;
@@ -465,13 +465,13 @@ body {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 474, style.scss */
+/* line 475, style.scss */
 .projects .div-project2 .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: black;
   text-align: center;
 }
-/* line 480, style.scss */
+/* line 481, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -485,7 +485,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 494, style.scss */
+/* line 495, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button:hover {
   background-color: black;
   color: white;
@@ -493,7 +493,7 @@ body {
 }
 
 /* ----------------------- Page project seul ----------------------- */
-/* line 515, style.scss */
+/* line 516, style.scss */
 .project-indiv-header {
   background-color: #E4B8AB;
   height: 85vh;
@@ -503,19 +503,19 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 524, style.scss */
+/* line 525, style.scss */
 .project-indiv-header .content-project-indiv-header {
   position: absolute;
   width: 100%;
   transform: rotate(3deg);
 }
-/* line 529, style.scss */
+/* line 530, style.scss */
 .project-indiv-header .content-project-indiv-header .mockup-project {
   display: flex;
   justify-content: center;
   height: 600px;
 }
-/* line 534, style.scss */
+/* line 535, style.scss */
 .project-indiv-header .content-project-indiv-header .title-line {
   color: #D47964;
   justify-content: center;
@@ -523,7 +523,7 @@ body {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
 }
-/* line 542, style.scss */
+/* line 543, style.scss */
 .project-indiv-header .content-project-indiv-header .title-line::after {
   content: "";
   background-color: #D47964;
@@ -533,13 +533,13 @@ body {
   position: absolute;
 }
 
-/* line 555, style.scss */
+/* line 556, style.scss */
 .content-project-indiv {
   padding-right: 150px;
   padding-left: 150px;
   margin-top: 150px;
 }
-/* line 560, style.scss */
+/* line 561, style.scss */
 .content-project-indiv h2 {
   color: #D47964;
   justify-content: center;
@@ -547,7 +547,7 @@ body {
   font-size: 30px;
   font-family: 'Longline Quart FREE';
 }
-/* line 568, style.scss */
+/* line 569, style.scss */
 .content-project-indiv h2::after {
   content: "";
   background-color: #D47964;
@@ -556,7 +556,7 @@ body {
   height: 3px;
   position: absolute;
 }
-/* line 577, style.scss */
+/* line 578, style.scss */
 .content-project-indiv p {
   margin-top: 50px;
   margin-bottom: 130px;
@@ -565,7 +565,7 @@ body {
 
 /* ----------------------- ----------------------- ----------------------- */
 @media screen and (max-width: 780px) {
-  /* line 588, style.scss */
+  /* line 589, style.scss */
   .home-presentation {
     height: 600px;
     padding-left: 150px;
@@ -574,12 +574,12 @@ body {
     margin-bottom: 200px;
   }
 
-  /* line 599, style.scss */
-  .home-projects .div-project {
+  /* line 600, style.scss */
+  .projects .div-project {
     height: 105vh;
   }
-  /* line 603, style.scss */
-  .home-projects .div-project .div-project-content .right {
+  /* line 604, style.scss */
+  .projects .div-project .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;

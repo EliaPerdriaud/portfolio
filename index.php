@@ -5,11 +5,12 @@ require_once 'layout/header.php'?>
 
         <div class="home-header">
             <h1>Portfolio d'une
-                <span
+                <!-- <span
                    class="txt-rotate"
                    data-period="2000"
                    data-rotate='[ "webdesigneuse.", "intégratrice web.", "développeuse frontend." ]'>
-                </span>
+                </span> -->
+                webdesigneuse
               </h1>
         </div>
 
