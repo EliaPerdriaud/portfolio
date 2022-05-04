@@ -8,14 +8,14 @@
 }
 /* ----------------------- Variables ----------------------- */
 /* ----------------------- BODY ----------------------- */
-/* line 25, style.scss */
+/* line 24, style.scss */
 body {
   font-family: 'Poppins', sans-serif !important;
   overflow-x: hidden;
 }
 
 /* ----------------------- TOPNAV ----------------------- */
-/* line 33, style.scss */
+/* line 32, style.scss */
 .topnav {
   background-color: #E4B8AB;
   overflow: hidden;
@@ -24,7 +24,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-/* line 41, style.scss */
+/* line 40, style.scss */
 .topnav a {
   color: white;
   text-align: center;
@@ -33,18 +33,18 @@ body {
   font-size: 17px;
   display: flex;
 }
-/* line 49, style.scss */
+/* line 48, style.scss */
 .topnav a:hover {
   color: #D47964;
   text-decoration: underline;
 }
-/* line 56, style.scss */
+/* line 55, style.scss */
 .topnav #logo-header {
   height: 80px;
 }
 
 /* ----------------------- Header ----------------------- */
-/* line 63, style.scss */
+/* line 62, style.scss */
 .portfolio-header {
   background-image: url(../img/fond-header-autre.png);
   height: 203px;
@@ -52,7 +52,7 @@ body {
 }
 
 /* ----------------------- Page d'accueil ----------------------- */
-/* line 71, style.scss */
+/* line 70, style.scss */
 .home-header {
   background-image: url(../img/fond-header.png);
   height: 627px;
@@ -60,12 +60,13 @@ body {
   padding-left: 150px;
   padding-right: 150px;
 }
-/* line 79, style.scss */
+/* line 78, style.scss */
 .home-header h1 {
   font-size: 70px;
   color: #D47964;
   padding-top: 220px;
   font-family: 'Longline Quart FREE';
+  overflow: hidden;
 }
 
 /*Presentation*/
@@ -87,26 +88,26 @@ body {
   display: grid;
   place-content: center;
 }
-/* line 108, style.scss */
+/* line 109, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect {
   position: relative;
 }
-/* line 111, style.scss */
+/* line 112, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover {
   color: white;
   transition: transform .6s ease;
 }
-/* line 116, style.scss */
+/* line 117, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-/* line 121, style.scss */
+/* line 122, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-/* line 126, style.scss */
+/* line 127, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   content: " ";
   display: block;
@@ -120,13 +121,13 @@ body {
   z-index: -1;
   transition: transform .6s ease;
 }
-/* line 139, style.scss */
+/* line 143, style.scss */
 .home-presentation p {
   text-align: center;
   line-height: 1.8em;
   font-size: 20px;
 }
-/* line 145, style.scss */
+/* line 149, style.scss */
 .home-presentation .portfolio-button {
   display: block;
   margin: auto;
@@ -139,7 +140,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 158, style.scss */
+/* line 162, style.scss */
 .home-presentation .portfolio-button:hover {
   background-color: #D47964;
   color: white;
@@ -147,7 +148,7 @@ body {
 }
 
 /* ----------------------- Page a propos ----------------------- */
-/* line 173, style.scss */
+/* line 177, style.scss */
 .biographie {
   background-color: #E4B8AB;
   height: 60vh;
@@ -157,7 +158,7 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 182, style.scss */
+/* line 186, style.scss */
 .biographie h2 {
   transform: rotate(3deg);
   margin-left: 30px;
@@ -167,7 +168,7 @@ body {
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 192, style.scss */
+/* line 196, style.scss */
 .biographie h2::after {
   content: "";
   background-color: #D47964;
@@ -176,7 +177,7 @@ body {
   height: 3px;
   position: absolute;
 }
-/* line 202, style.scss */
+/* line 206, style.scss */
 .biographie p {
   transform: rotate(3deg);
   margin: 50px;
@@ -185,7 +186,7 @@ body {
   font-size: 17px;
 }
 
-/* line 212, style.scss */
+/* line 216, style.scss */
 .title-line {
   color: #D47964;
   justify-content: center;
@@ -193,7 +194,7 @@ body {
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 220, style.scss */
+/* line 224, style.scss */
 .title-line::after {
   content: "";
   background-color: #D47964;
@@ -203,13 +204,13 @@ body {
   position: absolute;
 }
 
-/* line 231, style.scss */
+/* line 235, style.scss */
 .timeline {
   margin: 50px auto;
   position: relative;
   max-width: 80em;
 }
-/* line 236, style.scss */
+/* line 240, style.scss */
 .timeline:before {
   background-color: #D47964;
   content: '';
@@ -221,11 +222,11 @@ body {
   height: 100%;
 }
 
-/* line 248, style.scss */
+/* line 252, style.scss */
 .timeline-event {
   position: relative;
 }
-/* line 253, style.scss */
+/* line 257, style.scss */
 .timeline-event:hover .timeline-event-icon {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -233,39 +234,39 @@ body {
   transform: rotate(-45deg);
   background-color: black;
 }
-/* line 258, style.scss */
+/* line 262, style.scss */
 .timeline-event:hover .timeline-event-thumbnail {
   -moz-box-shadow: inset 40em 0 0 0 black;
   -webkit-box-shadow: inset 40em 0 0 0 black;
   box-shadow: inset 40em 0 0 0 black;
 }
 
-/* line 264, style.scss */
+/* line 268, style.scss */
 .timeline-event-copy {
   padding: 2em;
   position: relative;
   top: -1.875em;
   left: 4em;
 }
-/* line 270, style.scss */
+/* line 274, style.scss */
 .timeline-event-copy h3 {
   font-size: 1.75em;
 }
-/* line 274, style.scss */
+/* line 278, style.scss */
 .timeline-event-copy h4 {
   font-size: 1.2em;
   margin-bottom: 1.2em;
 }
-/* line 279, style.scss */
+/* line 283, style.scss */
 .timeline-event-copy strong {
   font-weight: 700;
 }
-/* line 283, style.scss */
+/* line 287, style.scss */
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
   padding-bottom: 1.2em;
 }
 
-/* line 288, style.scss */
+/* line 292, style.scss */
 .timeline-event-icon {
   -moz-transition: -moz-transform 0.2s ease-in;
   -o-transition: -o-transform 0.2s ease-in;
@@ -286,7 +287,7 @@ body {
   height: 1em;
 }
 
-/* line 303, style.scss */
+/* line 307, style.scss */
 .timeline-event-thumbnail {
   -moz-transition: box-shadow 0.5s ease-in 0.1s;
   -o-transition: box-shadow 0.5s ease-in 0.1s;
@@ -305,12 +306,13 @@ body {
 }
 
 /* ----------------------- Projets ----------------------- */
-/* line 318, style.scss */
+/* line 322, style.scss */
 .projects {
+  overflow: hidden;
   /*Projet 1*/
   /*Projet2*/
 }
-/* line 321, style.scss */
+/* line 325, style.scss */
 .projects h2 {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
@@ -318,7 +320,7 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-/* line 329, style.scss */
+/* line 333, style.scss */
 .projects .underline-title {
   width: 80px;
   height: 3px;
@@ -327,7 +329,7 @@ body {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 339, style.scss */
+/* line 344, style.scss */
 .projects .div-project {
   background-color: #E4B8AB;
   position: relative;
@@ -337,16 +339,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 347, style.scss */
+/* line 353, style.scss */
 .projects .div-project .div-project-content {
   width: 100%;
 }
-/* line 349, style.scss */
+/* line 356, style.scss */
 .projects .div-project .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 352, style.scss */
+/* line 360, style.scss */
 .projects .div-project .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -355,7 +357,7 @@ body {
   transform: rotate(3deg);
   margin: auto;
 }
-/* line 361, style.scss */
+/* line 370, style.scss */
 .projects .div-project .div-project-content .right {
   background-color: rgba(184, 148, 137, 0.8);
   height: 100%;
@@ -366,7 +368,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 372, style.scss */
+/* line 381, style.scss */
 .projects .div-project .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -374,7 +376,7 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 380, style.scss */
+/* line 389, style.scss */
 .projects .div-project .div-project-content .right .right-content h3 {
   color: white;
   text-transform: uppercase;
@@ -383,13 +385,13 @@ body {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 389, style.scss */
+/* line 398, style.scss */
 .projects .div-project .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: white;
   text-align: center;
 }
-/* line 395, style.scss */
+/* line 404, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -403,13 +405,13 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 409, style.scss */
+/* line 418, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button:hover {
   background-color: white;
   color: #D47964;
   transition: 0.5s;
 }
-/* line 425, style.scss */
+/* line 435, style.scss */
 .projects .div-project2 {
   background-color: white;
   position: relative;
@@ -419,16 +421,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 433, style.scss */
+/* line 444, style.scss */
 .projects .div-project2 .div-project-content {
   width: 100%;
 }
-/* line 435, style.scss */
+/* line 447, style.scss */
 .projects .div-project2 .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 438, style.scss */
+/* line 451, style.scss */
 .projects .div-project2 .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -437,7 +439,7 @@ body {
   transform: rotate(3deg);
   margin: auto;
 }
-/* line 447, style.scss */
+/* line 461, style.scss */
 .projects .div-project2 .div-project-content .right {
   background-color: rgba(255, 255, 255, 0.8);
   height: 100%;
@@ -448,7 +450,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 458, style.scss */
+/* line 472, style.scss */
 .projects .div-project2 .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -456,7 +458,7 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 466, style.scss */
+/* line 480, style.scss */
 .projects .div-project2 .div-project-content .right .right-content h3 {
   color: black;
   text-transform: uppercase;
@@ -465,13 +467,13 @@ body {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 475, style.scss */
+/* line 489, style.scss */
 .projects .div-project2 .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: black;
   text-align: center;
 }
-/* line 481, style.scss */
+/* line 495, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -485,7 +487,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 495, style.scss */
+/* line 509, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button:hover {
   background-color: black;
   color: white;
@@ -493,7 +495,7 @@ body {
 }
 
 /* ----------------------- Page project seul ----------------------- */
-/* line 516, style.scss */
+/* line 530, style.scss */
 .project-indiv-header {
   background-color: #E4B8AB;
   height: 85vh;
@@ -503,19 +505,19 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 525, style.scss */
+/* line 539, style.scss */
 .project-indiv-header .content-project-indiv-header {
   position: absolute;
   width: 100%;
   transform: rotate(3deg);
 }
-/* line 530, style.scss */
+/* line 544, style.scss */
 .project-indiv-header .content-project-indiv-header .mockup-project {
   display: flex;
   justify-content: center;
   height: 600px;
 }
-/* line 535, style.scss */
+/* line 550, style.scss */
 .project-indiv-header .content-project-indiv-header .title-line {
   color: #D47964;
   justify-content: center;
@@ -523,7 +525,7 @@ body {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
 }
-/* line 543, style.scss */
+/* line 558, style.scss */
 .project-indiv-header .content-project-indiv-header .title-line::after {
   content: "";
   background-color: #D47964;
@@ -533,13 +535,13 @@ body {
   position: absolute;
 }
 
-/* line 556, style.scss */
+/* line 571, style.scss */
 .content-project-indiv {
   padding-right: 150px;
   padding-left: 150px;
   margin-top: 150px;
 }
-/* line 561, style.scss */
+/* line 576, style.scss */
 .content-project-indiv h2 {
   color: #D47964;
   justify-content: center;
@@ -547,7 +549,7 @@ body {
   font-size: 30px;
   font-family: 'Longline Quart FREE';
 }
-/* line 569, style.scss */
+/* line 584, style.scss */
 .content-project-indiv h2::after {
   content: "";
   background-color: #D47964;
@@ -556,7 +558,7 @@ body {
   height: 3px;
   position: absolute;
 }
-/* line 578, style.scss */
+/* line 594, style.scss */
 .content-project-indiv p {
   margin-top: 50px;
   margin-bottom: 130px;
@@ -565,23 +567,63 @@ body {
 
 /* ----------------------- ----------------------- ----------------------- */
 @media screen and (max-width: 780px) {
-  /* line 589, style.scss */
+  /* line 607, style.scss */
+  .home-header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  /* line 611, style.scss */
+  .home-header h1 {
+    font-size: 55px;
+  }
+
+  /* line 616, style.scss */
   .home-presentation {
     height: 600px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 100px;
     margin-bottom: 200px;
   }
+  /* line 625, style.scss */
+  .home-presentation .div-title-hover-effect h2 {
+    font-size: 40px;
+  }
+  /* line 630, style.scss */
+  .home-presentation p {
+    line-height: 1.4em;
+    font-size: 16px;
+  }
 
-  /* line 600, style.scss */
+  /* line 637, style.scss */
   .projects .div-project {
     height: 105vh;
   }
-  /* line 604, style.scss */
+  /* line 642, style.scss */
   .projects .div-project .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
+  }
+  /* line 648, style.scss */
+  .projects .div-project .div-project-content .right .right-content {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  /* line 652, style.scss */
+  .projects .div-project .div-project-content .right .right-content p {
+    line-height: 1.3em;
+  }
+}
+/*--------------------------------------------------------------------*/
+@media screen and (max-width: 400px) {
+  /* line 672, style.scss */
+  .home-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 676, style.scss */
+  .home-header h1 {
+    font-size: 45px;
   }
 }
