@@ -40,8 +40,8 @@ require_once 'layout/header.php'?>
                     </div>
                     <div class="right">
                         <div class="right-content">
-                            <h3>Projet 1</h3>
-                            <p>  Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. </p>
+                            <h3>L'éclaireur des coiffeurs</h3>
+                            <p>Ce projet a consisté à faire une proposition fictive, de refonte du site web de l’éclaireur des coiffeurs. Un audit, ainsi qu'un benchmark ont été réalisés. A la suite desquels, une proposition de maquette à été faite pour cette refonte.</p>
                   
                             <button class="portfolio-button" type="button">
                                 Voir le projet

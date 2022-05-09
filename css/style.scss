@@ -206,9 +206,12 @@ body {
     p {
         transform: rotate(3deg);
         margin: 50px;
-        padding-left: 150px;
-        padding-right: 80px;
+        padding-left: 80px;
+        padding-right: 30px;
         font-size: 17px;
+        color:white;
+        line-height: 1.4em;
+        font-weight: 400;
 
     }
 }
@@ -364,6 +367,7 @@ body {
                     height: 90%;
                     transform: rotate(3deg);
                     margin: auto;
+                    padding-left: 50px;
                 }
             }
 
@@ -455,6 +459,7 @@ body {
                     height: 90%;
                     transform: rotate(3deg);
                     margin: auto;
+                    padding-left: 50px;
                 }
             }
 
@@ -599,6 +604,31 @@ body {
 }
 
 /* ----------------------- ----------------------- ----------------------- */
+@media screen and (max-width: 980px) {
+    .projects 
+    .div-project{
+        .div-project-content{
+            .right{
+                .right-content{
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            } 
+        }
+    } 
+
+    .projects 
+    .div-project2{
+        .div-project-content{
+            .right{
+                .right-content{
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            } 
+        }
+    } 
+}
 
 @media screen and (max-width: 780px) {
 
@@ -615,11 +645,10 @@ body {
 
     .home-presentation {
 
-        height: 600px;
         padding-left: $padding;
         padding-right: $padding;
         padding-top: 100px;
-        margin-bottom: 200px;
+        padding-bottom: 160px;
 
         .div-title-hover-effect {
             h2 {
@@ -632,40 +661,80 @@ body {
             font-size: 16px;
         }
     }
-        .projects {
 
-            .div-project {
-                height: 105vh;
+    .projects {
 
-                .div-project-content {
+        .div-project {
+            height: 105vh;
 
-                    .right {
+            .div-project-content {
 
-                        height: 50%;
-                        width: 100%;
-                        bottom: 0px;
+                .mockup-project {
 
-                        .right-content {
-                            margin-left: 60px;
-                            margin-right: 60px;
-
-                            p {
-                                line-height: 1.3em;
-                            }
-                        }
-
+                    #project1 {
+                        height: 80%;
                     }
                 }
 
+                .right {
+
+                    height: 50%;
+                    width: 100%;
+                    bottom: 0px;
+
+                    .right-content {
+                        margin-left: 60px;
+                        margin-right: 60px;
+
+                        p {
+                            line-height: 1.3em;
+                        }
+                    }
+
+                }
             }
+
         }
+
+        .div-project2 {
+            height: 105vh;
+
+            .div-project-content {
+
+                .mockup-project {
+
+                    #project1 {
+                        height: 80%;
+                    }
+                }
+
+                .right {
+
+                    height: 50%;
+                    width: 100%;
+                    bottom: 0px;
+
+                    .right-content {
+                        margin-left: 60px;
+                        margin-right: 60px;
+
+                        p {
+                            line-height: 1.3em;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
 
 
 
 }
 
 /*--------------------------------------------------------------------*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     $padding: 20px;
 
@@ -675,6 +744,73 @@ body {
 
         h1 {
             font-size: 45px;
+        }
+    }
+
+    .projects {
+
+        .div-project {
+
+            .div-project-content {
+
+                .mockup-project {
+
+                    #project1 {
+                        height: 68%;
+                    }
+                }
+
+                .right {
+
+                    height: 50%;
+                    width: 100%;
+                    bottom: 0px;
+
+                    .right-content {
+                        margin-left: 60px;
+                        margin-right: 60px;
+
+                        p {
+                            line-height: 1.3em;
+                            font-size: 15px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .div-project2 {
+
+            .div-project-content {
+
+                .mockup-project {
+
+                    #project1 {
+                        height: 68%;
+                    }
+                }
+
+                .right {
+
+                    height: 50%;
+                    width: 100%;
+                    bottom: 0px;
+
+                    .right-content {
+                        margin-left: 60px;
+                        margin-right: 60px;
+
+                        p {
+                            line-height: 1.3em;
+                            font-size: 15px;
+                        }
+                    }
+
+                }
+            }
+
         }
     }
 }
