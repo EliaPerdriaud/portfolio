@@ -26,7 +26,7 @@
 
     </div> -->
 
-    <div class="topnav">
+    <!-- <div class="topnav">
         <div class="menu">
             <input id="burger-menu" type="checkbox">
             <label id="burger-icon" for="burger-menu">☰</label>
@@ -40,6 +40,23 @@
         </div>
         <div class="menu">
             <div class="box-menu">
+                <div class="text-menu"><a href="./portfolio.php">Portfolio</a></div>
+                <div class="text-menu"><a href="#">Contact</a></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="topnav">
+        <div class="logo">
+            <img class="img-logo" src="img/Logo-Elia-Rose.png" alt="logo">
+        </div>
+
+        <div class="menu">
+            <input id="burger-menu" type="checkbox">
+            <label id="burger-icon" for="burger-menu">☰</label>
+            <div class="box-menu">
+                <div class="text-menu"><a href="./index.php">Accueil</a></div>
+                <div class="text-menu"><a href="./a_propos.php">A propos</a></div>
                 <div class="text-menu"><a href="./portfolio.php">Portfolio</a></div>
                 <div class="text-menu"><a href="#">Contact</a></div>
             </div>
