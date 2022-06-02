@@ -1,45 +1,53 @@
-<?php 
-$title="A propos";
-require_once 'layout/header.php'?>
+<?php
+$title = "A propos";
+require_once 'layout/header.php' ?>
 
+<div class="a-propos-header">
     <div class="portfolio-header">
     </div>
     <div class="biographie">
         <h2>Biographie</h2>
-        <p> Lorem ipsum dolor sit amet. Eum itaque quod ad delectus aliquam cum minima nihil hic unde recusandae id quia corporis hic repellendus pariatur ut consequatur necessitatibus? Et suscipit possimus in laborum magni et veritatis vitae est deleniti dolorem vel sequi enim ut quam accusamus est quia repudiandae. Non eligendi suscipit ea corrupti saepe et sint reprehenderit sed velit temporibus et quod voluptates qui quasi facilis qui natus nesciunt.
+        <p> Actuellement en troisième année de bachelor webdesigner à My Digital School Lyon, je vais intégrer, dès la rentrée prochaine Master of Business Administration UI/UX, de la même école. 
+            En parallèle de cette formation, j’effectue mon alternance en tant que webdesigner UI/UX, chez MentalWorks, une agence web basée à Compiègne, dans l’Oise. 
+            <br>
+            <br>
+            Grâce à ma formation en IUT informatique, j’ai acquis des connaissances en développement web. Ensuite, mon bachelor en webdesign m’a permis d’acquérir des compétences en conception de maquettes, de chartes graphiques, de logos, tout en consolidant mes compétences en développement. Cette formation m’a également apporté la connaissance du SEO, du marketing digital, de la gestion de projet et du motion design.
+            <br>
+            <br>
+            Au sein de l'agence dans laquelle je travaille, j’ai pu mener à bien différents projets pour lesquels j’ai été confrontée à des problématiques d’intégration de contenus, de développement, de référencement et d’optimisation, de création graphique, ainsi que de la gestion de projet et gestion de la clientèle.
 
-            Aut optio doloremque quo porro voluptas et sapiente deserunt! Aut voluptatibus quibusdam et necessitatibus molestiae a reprehenderit excepturi et commodi voluptatem non distinctio nostrum eos dolor placeat non similique quas! Cum enim sequi non enim aspernatur id vero totam sed tenetur beatae est nobis omnis.
         </p>
     </div>
-        <h2 class="title-line">Parcours</h2>
-        <ul class="timeline">
-            <li class="timeline-event">
-                <label class="timeline-event-icon"></label>
-                <div class="timeline-event-copy">
-                    <p class="timeline-event-thumbnail">April 2011 - heute</p>
-                    <h3>Geil,Danke! GmbH</h3>
-                    <h4>Geschäftsführerin eines Web-Studios</h4>
-                    <p><strong>Schwerpunkt: Frontend-Entwicklung</strong><br>Entwickeln von anspruchsvollen, animierten, responsive und adaptive Webseiten mit HTML5, SCSS, jQuery; für alle Browser, optimiert für Desktop, Notebook, Smartphones und Tablets (iOS, Android, Windows).</p>
-                    <p><strong>Projektmanagement mit Scrum</strong><br>Ständiges Verbessern des agilen Entwicklungsprozesses beispielsweise durch Grunt, Yeoman, GIT, JIRA und BrowserStack.</p>
-                </div>
-            </li>
-            <li class="timeline-event">
-                <label class="timeline-event-icon"></label>
-                <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail">November 2009 - März 2011</p>
-                <h3>Freelancer</h3>
-                <h4>Designer und Autor</h4>
-                <p>Konzeption, Design und Produktion von Digitalen Magazinen mit InDesign, der Adobe Digital Publishing Suite und HTML5. Co-Autorin der Fachbücher "Digitales Publizieren für Tablets" und "Adobe Digital Publishing Suite" erschienen im dpunkt.verlag.</p>
-                </div>
-            </li>
-            <li class="timeline-event">
-                <label class="timeline-event-icon"></label>
-                <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail">April 2011 - heute</p>
-                <h3>konplan gmbh</h3>
-                <h4>IT-Consultant</h4>
-                <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
-                </div>
-            </li>
-        </ul> 
+</div>
+<h2 class="title-line">Parcours</h2>
+<ul class="timeline">
+<li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">2021-2022</p>
+            <h3>Webdesigneuse</h3>
+            <h4>MentalWorks</h4>
+            <p>Réalisation de logos (illustrator), illustrations (illustrator), retouches de photos (PhotoShop), maquettes (XD) et intégration de sites web (WordPress).</p>
+        </div>
+    </li>
+    <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">2021-2022</p>
+            <h3>Bachelor 3 webdesign</h3>
+            <h4>My Digital School Lyon</h4>
+            <p>Cette année de bachelor m'a permise d'apprendre les techniques de création graphique et ergonomique, de consolider mes connaissances en développement web ainsi qu'en gestion de projet. </p>
+        </div>
+    </li>
+    <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">2019-2021</p>
+            <h3>Diplôme universitaire de technologie (DUT) - Informatique</h3>
+            <h4>IUT Lyon 1</h4>
+            <p>Grâce à ce DUT, j'ai acquérie des compétences en développement informatiquen ainsi qu'en gestion de projet.</p>
+        </div>
+    </li>
+    
+</ul>
 </body>

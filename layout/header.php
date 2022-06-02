@@ -10,16 +10,38 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     
-    <script src="js/animation-text.js"></script>
+    <script src="js/animation-text.js"></script> 
+    <script src="js/animation-scrool.js"></script> 
 
     <title><?php echo $title; ?></title>
 </head>
 
 <body>
-    <div class="topnav">          
+    <!-- <div class="topnav">          
         <a href="./index.php">Accueil</a>
         <a href="./a_propos.php">A propos</a>
         <a href="./index.php"><img id="logo-header" src="img/Logo-Elia-Rose.png" alt="logo"></a>
         <a href="./portfolio.php">Portfolio</a>
-        <a href="#">Contact</a>     
+        <a href="#">Contact</a>      
+
+    </div> -->
+
+    <div class="topnav">
+        <div class="menu">
+            <input id="burger-menu" type="checkbox">
+            <label id="burger-icon" for="burger-menu">☰</label>
+            <div class="box-menu">
+                <div class="text-menu"><a href="./index.php">Accueil</a></div>
+                <div class="text-menu"><a href="./a_propos.php">A propos</a></div>
+            </div>
+        </div>
+        <div class="logo">
+            <img class="img-logo" src="img/Logo-Elia-Rose.png" alt="logo">
+        </div>
+        <div class="menu">
+            <div class="box-menu">
+                <div class="text-menu"><a href="./portfolio.php">Portfolio</a></div>
+                <div class="text-menu"><a href="#">Contact</a></div>
+            </div>
+        </div>
     </div>

@@ -15,44 +15,140 @@ body {
 }
 
 /* ----------------------- TOPNAV ----------------------- */
-/* line 32, style.scss */
+/* line 60, style.scss */
 .topnav {
-  background-color: #E4B8AB;
-  overflow: hidden;
   flex-direction: row;
+  background-color: #E4B8AB;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 20vh;
+}
+/* line 67, style.scss */
+.topnav .img-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 30px 0px;
+}
+/* line 74, style.scss */
+.topnav #burger-menu {
+  display: none;
+}
+/* line 79, style.scss */
+.topnav #burger-icon {
+  display: none;
+}
+/* line 83, style.scss */
+.topnav .menu {
+  display: flex;
   align-items: center;
 }
-/* line 40, style.scss */
-.topnav a {
-  color: white;
-  text-align: center;
-  padding: 24px 14px;
-  text-decoration: none;
-  font-size: 17px;
+/* line 88, style.scss */
+.topnav .menu .box-menu {
   display: flex;
 }
-/* line 48, style.scss */
-.topnav a:hover {
-  color: #D47964;
-  text-decoration: underline;
+/* line 91, style.scss */
+.topnav .menu .box-menu .text-menu {
+  padding: 56px 33px;
 }
-/* line 55, style.scss */
-.topnav #logo-header {
-  height: 80px;
+/* line 94, style.scss */
+.topnav .menu .box-menu .text-menu a {
+  color: #D47964;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px;
+}
+/* line 104, style.scss */
+.topnav .menu .box-menu .text-menu a:hover {
+  background-color: #D47964;
+  color: #E4B8AB;
+}
+
+@media screen and (max-width: 958px) {
+  /* line 123, style.scss */
+  .topnav .menu label {
+    display: block;
+  }
+  /* line 127, style.scss */
+  .topnav .menu .box-menu {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 270px;
+    top: 0%;
+    right: 0%;
+    height: 651px;
+    z-index: 2;
+    background-color: white;
+    transform: translateX(100%);
+  }
+  /* line 141, style.scss */
+  .topnav .menu .box-menu .text-menu {
+    justify-content: center;
+    display: flex;
+    padding: 52px 0px;
+  }
+
+  /* line 150, style.scss */
+  .menu #burger-icon {
+    display: block;
+    font-size: 40px;
+    position: fixed;
+    top: 1%;
+    right: 3%;
+    z-index: 3;
+  }
+  /* line 158, style.scss */
+  .menu #burger-icon:hover {
+    cursor: pointer;
+  }
+
+  /* line 165, style.scss */
+  #burger-menu:checked ~ .box-menu {
+    transform: translate(0);
+  }
+}
+/*-------------------APPARITION----------------------*/
+/* line 171, style.scss */
+.apparition {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  overflow: hidden;
+  -webkit-transition: opacity 0.5s,-webkit-transform 0.7s;
+  transition: opacity 0.5s,-webkit-transform 0.7s;
+  -o-transition: opacity 0.5s,transform 0.7s;
+  transition: opacity 0.5s,transform 0.7s;
+  transition: opacity 0.5s,transform 0.7s,-webkit-transform 0.7s;
+  margin-bottom: 20px;
+}
+
+/* line 188, style.scss */
+.apparition.animated {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 /* ----------------------- Header ----------------------- */
-/* line 62, style.scss */
+/* line 195, style.scss */
 .portfolio-header {
   background-image: url(../img/fond-header-autre.png);
-  height: 203px;
+  height: 150px;
   margin-top: -4px;
 }
 
 /* ----------------------- Page d'accueil ----------------------- */
-/* line 70, style.scss */
+/* line 203, style.scss */
 .home-header {
   background-image: url(../img/fond-header.png);
   height: 627px;
@@ -60,7 +156,7 @@ body {
   padding-left: 150px;
   padding-right: 150px;
 }
-/* line 78, style.scss */
+/* line 211, style.scss */
 .home-header h1 {
   font-size: 70px;
   color: #D47964;
@@ -70,44 +166,44 @@ body {
 }
 
 /*Presentation*/
-/* line 89, style.scss */
+/* line 222, style.scss */
 .home-presentation {
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 260px;
   padding-bottom: 260px;
 }
-/* line 99, style.scss */
+/* line 232, style.scss */
 .home-presentation h2 {
   font-size: 40px;
   color: #D47964;
   text-align: center;
 }
-/* line 105, style.scss */
+/* line 238, style.scss */
 .home-presentation .div-title-hover-effect {
   display: grid;
   place-content: center;
 }
-/* line 109, style.scss */
+/* line 242, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect {
   position: relative;
 }
-/* line 112, style.scss */
+/* line 245, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover {
   color: white;
   transition: transform .6s ease;
 }
-/* line 117, style.scss */
+/* line 250, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-/* line 122, style.scss */
+/* line 255, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-/* line 127, style.scss */
+/* line 260, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   content: " ";
   display: block;
@@ -121,13 +217,13 @@ body {
   z-index: -1;
   transition: transform .6s ease;
 }
-/* line 143, style.scss */
+/* line 276, style.scss */
 .home-presentation p {
   text-align: center;
   line-height: 1.8em;
   font-size: 20px;
 }
-/* line 149, style.scss */
+/* line 282, style.scss */
 .home-presentation .portfolio-button {
   display: block;
   margin: auto;
@@ -140,7 +236,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 162, style.scss */
+/* line 295, style.scss */
 .home-presentation .portfolio-button:hover {
   background-color: #D47964;
   color: white;
@@ -148,28 +244,32 @@ body {
 }
 
 /* ----------------------- Page a propos ----------------------- */
-/* line 177, style.scss */
-.biographie {
+/* line 307, style.scss */
+.a-propos-header {
+  overflow-x: hidden;
+}
+/* line 310, style.scss */
+.a-propos-header .biographie {
   background-color: #E4B8AB;
-  height: 60vh;
+  height: 70vh;
   position: relative;
   width: calc(100% + 70px);
   margin: -50px 0 100px -50px;
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 186, style.scss */
-.biographie h2 {
+/* line 319, style.scss */
+.a-propos-header .biographie h2 {
   transform: rotate(3deg);
-  margin-left: 30px;
+  margin-left: 90px;
   color: #D47964;
   justify-content: center;
   display: flex;
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 196, style.scss */
-.biographie h2::after {
+/* line 329, style.scss */
+.a-propos-header .biographie h2::after {
   content: "";
   background-color: #D47964;
   width: 8%;
@@ -177,19 +277,21 @@ body {
   height: 3px;
   position: absolute;
 }
-/* line 206, style.scss */
-.biographie p {
+/* line 339, style.scss */
+.a-propos-header .biographie p {
   transform: rotate(3deg);
-  margin: 50px;
+  margin: 50px auto;
+  max-width: 85vw;
   padding-left: 80px;
   padding-right: 30px;
   font-size: 17px;
   color: white;
   line-height: 1.4em;
   font-weight: 400;
+  text-align: center;
 }
 
-/* line 219, style.scss */
+/* line 355, style.scss */
 .title-line {
   color: #D47964;
   justify-content: center;
@@ -197,7 +299,7 @@ body {
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 227, style.scss */
+/* line 363, style.scss */
 .title-line::after {
   content: "";
   background-color: #D47964;
@@ -207,13 +309,13 @@ body {
   position: absolute;
 }
 
-/* line 238, style.scss */
+/* line 374, style.scss */
 .timeline {
   margin: 50px auto;
   position: relative;
-  max-width: 80em;
+  max-width: 70vw;
 }
-/* line 243, style.scss */
+/* line 379, style.scss */
 .timeline:before {
   background-color: #D47964;
   content: '';
@@ -225,11 +327,11 @@ body {
   height: 100%;
 }
 
-/* line 255, style.scss */
+/* line 391, style.scss */
 .timeline-event {
   position: relative;
 }
-/* line 260, style.scss */
+/* line 396, style.scss */
 .timeline-event:hover .timeline-event-icon {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -237,39 +339,39 @@ body {
   transform: rotate(-45deg);
   background-color: black;
 }
-/* line 265, style.scss */
+/* line 401, style.scss */
 .timeline-event:hover .timeline-event-thumbnail {
   -moz-box-shadow: inset 40em 0 0 0 black;
   -webkit-box-shadow: inset 40em 0 0 0 black;
   box-shadow: inset 40em 0 0 0 black;
 }
 
-/* line 271, style.scss */
+/* line 407, style.scss */
 .timeline-event-copy {
   padding: 2em;
   position: relative;
   top: -1.875em;
   left: 4em;
 }
-/* line 277, style.scss */
+/* line 413, style.scss */
 .timeline-event-copy h3 {
   font-size: 1.75em;
 }
-/* line 281, style.scss */
+/* line 417, style.scss */
 .timeline-event-copy h4 {
   font-size: 1.2em;
   margin-bottom: 1.2em;
 }
-/* line 286, style.scss */
+/* line 422, style.scss */
 .timeline-event-copy strong {
   font-weight: 700;
 }
-/* line 290, style.scss */
+/* line 426, style.scss */
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
   padding-bottom: 1.2em;
 }
 
-/* line 295, style.scss */
+/* line 431, style.scss */
 .timeline-event-icon {
   -moz-transition: -moz-transform 0.2s ease-in;
   -o-transition: -o-transform 0.2s ease-in;
@@ -290,7 +392,7 @@ body {
   height: 1em;
 }
 
-/* line 310, style.scss */
+/* line 446, style.scss */
 .timeline-event-thumbnail {
   -moz-transition: box-shadow 0.5s ease-in 0.1s;
   -o-transition: box-shadow 0.5s ease-in 0.1s;
@@ -309,13 +411,13 @@ body {
 }
 
 /* ----------------------- Projets ----------------------- */
-/* line 325, style.scss */
+/* line 461, style.scss */
 .projects {
   overflow: hidden;
   /*Projet 1*/
   /*Projet2*/
 }
-/* line 328, style.scss */
+/* line 464, style.scss */
 .projects h2 {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
@@ -323,7 +425,7 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-/* line 336, style.scss */
+/* line 472, style.scss */
 .projects .underline-title {
   width: 80px;
   height: 3px;
@@ -332,7 +434,7 @@ body {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 347, style.scss */
+/* line 483, style.scss */
 .projects .div-project {
   background-color: #E4B8AB;
   position: relative;
@@ -342,16 +444,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 356, style.scss */
+/* line 492, style.scss */
 .projects .div-project .div-project-content {
   width: 100%;
 }
-/* line 359, style.scss */
+/* line 495, style.scss */
 .projects .div-project .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 363, style.scss */
+/* line 499, style.scss */
 .projects .div-project .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -361,7 +463,7 @@ body {
   margin: auto;
   padding-left: 50px;
 }
-/* line 374, style.scss */
+/* line 510, style.scss */
 .projects .div-project .div-project-content .right {
   background-color: rgba(184, 148, 137, 0.8);
   height: 100%;
@@ -372,7 +474,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 385, style.scss */
+/* line 521, style.scss */
 .projects .div-project .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -380,7 +482,7 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 393, style.scss */
+/* line 529, style.scss */
 .projects .div-project .div-project-content .right .right-content h3 {
   color: white;
   text-transform: uppercase;
@@ -389,13 +491,13 @@ body {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 402, style.scss */
+/* line 538, style.scss */
 .projects .div-project .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: white;
   text-align: center;
 }
-/* line 408, style.scss */
+/* line 544, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -409,13 +511,13 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 422, style.scss */
+/* line 558, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button:hover {
   background-color: white;
   color: #D47964;
   transition: 0.5s;
 }
-/* line 439, style.scss */
+/* line 575, style.scss */
 .projects .div-project2 {
   background-color: white;
   position: relative;
@@ -425,16 +527,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 448, style.scss */
+/* line 584, style.scss */
 .projects .div-project2 .div-project-content {
   width: 100%;
 }
-/* line 451, style.scss */
+/* line 587, style.scss */
 .projects .div-project2 .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 455, style.scss */
+/* line 591, style.scss */
 .projects .div-project2 .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -444,7 +546,7 @@ body {
   margin: auto;
   padding-left: 50px;
 }
-/* line 466, style.scss */
+/* line 602, style.scss */
 .projects .div-project2 .div-project-content .right {
   background-color: rgba(255, 255, 255, 0.8);
   height: 100%;
@@ -455,7 +557,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 477, style.scss */
+/* line 613, style.scss */
 .projects .div-project2 .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -463,7 +565,7 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 485, style.scss */
+/* line 621, style.scss */
 .projects .div-project2 .div-project-content .right .right-content h3 {
   color: black;
   text-transform: uppercase;
@@ -472,13 +574,13 @@ body {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 494, style.scss */
+/* line 630, style.scss */
 .projects .div-project2 .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: black;
   text-align: center;
 }
-/* line 500, style.scss */
+/* line 636, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -492,7 +594,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 514, style.scss */
+/* line 650, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button:hover {
   background-color: black;
   color: white;
@@ -500,8 +602,12 @@ body {
 }
 
 /* ----------------------- Page project seul ----------------------- */
-/* line 535, style.scss */
-.project-indiv-header {
+/* line 671, style.scss */
+.project-header {
+  overflow: hidden;
+}
+/* line 675, style.scss */
+.project-header .project-indiv-header {
   background-color: #E4B8AB;
   height: 85vh;
   position: relative;
@@ -510,28 +616,28 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 544, style.scss */
-.project-indiv-header .content-project-indiv-header {
+/* line 684, style.scss */
+.project-header .project-indiv-header .content-project-indiv-header {
   position: absolute;
   width: 100%;
   transform: rotate(3deg);
 }
-/* line 549, style.scss */
-.project-indiv-header .content-project-indiv-header .mockup-project {
+/* line 689, style.scss */
+.project-header .project-indiv-header .content-project-indiv-header .mockup-project {
   display: flex;
   justify-content: center;
   height: 600px;
 }
-/* line 555, style.scss */
-.project-indiv-header .content-project-indiv-header .title-line {
+/* line 695, style.scss */
+.project-header .project-indiv-header .content-project-indiv-header .title-line {
   color: #D47964;
   justify-content: center;
   display: flex;
   font-size: 50px;
   font-family: 'Longline Quart FREE';
 }
-/* line 563, style.scss */
-.project-indiv-header .content-project-indiv-header .title-line::after {
+/* line 703, style.scss */
+.project-header .project-indiv-header .content-project-indiv-header .title-line::after {
   content: "";
   background-color: #D47964;
   width: 15%;
@@ -540,13 +646,13 @@ body {
   position: absolute;
 }
 
-/* line 576, style.scss */
+/* line 718, style.scss */
 .content-project-indiv {
   padding-right: 150px;
   padding-left: 150px;
   margin-top: 150px;
 }
-/* line 581, style.scss */
+/* line 723, style.scss */
 .content-project-indiv h2 {
   color: #D47964;
   justify-content: center;
@@ -554,7 +660,7 @@ body {
   font-size: 30px;
   font-family: 'Longline Quart FREE';
 }
-/* line 589, style.scss */
+/* line 731, style.scss */
 .content-project-indiv h2::after {
   content: "";
   background-color: #D47964;
@@ -563,154 +669,211 @@ body {
   height: 3px;
   position: absolute;
 }
-/* line 599, style.scss */
+/* line 741, style.scss */
 .content-project-indiv p {
   margin-top: 50px;
   margin-bottom: 130px;
   text-align: center;
+  line-height: 1.4em;
+}
+/* line 748, style.scss */
+.content-project-indiv .video {
+  display: flex;
+  justify-content: center;
 }
 
 /* ----------------------- ----------------------- ----------------------- */
+@media screen and (max-width: 1280px) {
+  /* line 757, style.scss */
+  .a-propos-header .biographie {
+    height: 80vh;
+  }
+}
 @media screen and (max-width: 980px) {
-  /* line 612, style.scss */
+  /* line 775, style.scss */
   .projects
   .div-project .div-project-content .right .right-content {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  /* line 624, style.scss */
+  /* line 787, style.scss */
   .projects
   .div-project2 .div-project-content .right .right-content {
     margin-left: 50px;
     margin-right: 50px;
   }
+
+  /* line 796, style.scss */
+  .a-propos-header .portfolio-header {
+    height: 103px;
+  }
 }
 @media screen and (max-width: 780px) {
-  /* line 637, style.scss */
+  /* line 806, style.scss */
   .home-header {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
-  /* line 641, style.scss */
+  /* line 810, style.scss */
   .home-header h1 {
     font-size: 55px;
   }
 
-  /* line 646, style.scss */
+  /* line 815, style.scss */
   .home-presentation {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 100px;
     padding-bottom: 160px;
   }
-  /* line 654, style.scss */
+  /* line 823, style.scss */
   .home-presentation .div-title-hover-effect h2 {
     font-size: 40px;
   }
-  /* line 659, style.scss */
+  /* line 828, style.scss */
   .home-presentation p {
     line-height: 1.4em;
     font-size: 16px;
   }
 
-  /* line 667, style.scss */
+  /* line 835, style.scss */
+  .a-propos-header .biographie {
+    height: 80vh;
+  }
+
+  /* line 842, style.scss */
   .projects .div-project {
     height: 105vh;
   }
-  /* line 674, style.scss */
+  /* line 849, style.scss */
   .projects .div-project .div-project-content .mockup-project #project1 {
-    height: 80%;
+    height: 65%;
+    margin-top: 100px;
   }
-  /* line 679, style.scss */
+  /* line 855, style.scss */
   .projects .div-project .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 685, style.scss */
+  /* line 861, style.scss */
   .projects .div-project .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 689, style.scss */
+  /* line 865, style.scss */
   .projects .div-project .div-project-content .right .right-content p {
     line-height: 1.3em;
   }
-  /* line 699, style.scss */
+  /* line 875, style.scss */
   .projects .div-project2 {
     height: 105vh;
   }
-  /* line 706, style.scss */
+  /* line 882, style.scss */
   .projects .div-project2 .div-project-content .mockup-project #project1 {
-    height: 80%;
+    height: 65%;
+    margin-top: 100px;
   }
-  /* line 711, style.scss */
+  /* line 888, style.scss */
   .projects .div-project2 .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 717, style.scss */
+  /* line 894, style.scss */
   .projects .div-project2 .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 721, style.scss */
+  /* line 898, style.scss */
   .projects .div-project2 .div-project-content .right .right-content p {
     line-height: 1.3em;
   }
 }
+@media screen and (max-width: 685px) {
+  height: 100vh;
+}
+@media screen and (max-width: 650px) {
+  /* line 920, style.scss */
+  .a-propos-header .biographie p {
+    font-size: 15px;
+  }
+
+  /* line 931, style.scss */
+  .projects .div-project .div-project-content .mockup-project #project1 {
+    height: 58%;
+    margin-top: 150px;
+  }
+  /* line 942, style.scss */
+  .projects .div-project2 .div-project-content .mockup-project #project1 {
+    height: 58%;
+    margin-top: 150px;
+  }
+}
 /*--------------------------------------------------------------------*/
-@media screen and (max-width: 500px) {
-  /* line 741, style.scss */
+@media screen and (max-width: 540px) {
+  /* line 956, style.scss */
   .home-header {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 745, style.scss */
+  /* line 960, style.scss */
   .home-header h1 {
     font-size: 45px;
   }
 
-  /* line 758, style.scss */
+  /* line 968, style.scss */
+  .a-propos-header .biographie p {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  /* line 985, style.scss */
   .projects .div-project .div-project-content .mockup-project #project1 {
     height: 68%;
   }
-  /* line 763, style.scss */
+  /* line 990, style.scss */
   .projects .div-project .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 769, style.scss */
+  /* line 996, style.scss */
   .projects .div-project .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 773, style.scss */
+  /* line 1000, style.scss */
   .projects .div-project .div-project-content .right .right-content p {
     line-height: 1.3em;
     font-size: 15px;
   }
-  /* line 790, style.scss */
+  /* line 1017, style.scss */
   .projects .div-project2 .div-project-content .mockup-project #project1 {
     height: 68%;
   }
-  /* line 795, style.scss */
+  /* line 1022, style.scss */
   .projects .div-project2 .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 801, style.scss */
+  /* line 1028, style.scss */
   .projects .div-project2 .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 805, style.scss */
+  /* line 1032, style.scss */
   .projects .div-project2 .div-project-content .right .right-content p {
     line-height: 1.3em;
     font-size: 15px;
+  }
+}
+/*--------------------------------------------------------------------*/
+@media screen and (max-width: 470px) {
+  /* line 1051, style.scss */
+  .a-propos-header .biographie p {
+    font-size: 14px;
   }
 }
