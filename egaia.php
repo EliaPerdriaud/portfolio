@@ -71,7 +71,7 @@ require_once 'layout/header.php'?>
 
     </p>
 
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTd2yvbX0wA2vBngFdWKcYy%2FEga%25C3%258Fa-app%3Fpage-id%3D0%253A1%26node-id%3D0%253A1%26viewport%3D-317%252C663%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D3%253A3" allowfullscreen></iframe>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTd2yvbX0wA2vBngFdWKcYy%2FEga%25C3%258Fa-app%3Fpage-id%3D0%253A1%26node-id%3D0%253A1%26viewport%3D-317%252C663%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D3%253A3" allowfullscreen></iframe>
 
 
         <!-- <div class="lightbox">

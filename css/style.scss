@@ -156,6 +156,44 @@ body {
 
 }
 
+.content-project-indiv {
+    .figma {
+        display: block;
+        margin: auto;
+        width: 400px;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .content-project-indiv {
+        .figma {
+            width: 300px;
+            height: 700px;
+        }
+    }
+}
+
+@media screen and (max-width: 745px){
+    .content-project-indiv {
+        .figma {
+            width: 200px;
+            height: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .content-project-indiv {
+        h2 {
+            text-align: center;
+        }
+        h2::after {
+            display: none !important;
+        }
+    }
+}
+
 @media screen and (max-width: 958px) {
 
     //menu
@@ -207,6 +245,18 @@ body {
         ~.box-menu {
             display:block;
             transform: translate(0);
+        }
+    }
+
+    .project-header {
+        .project-indiv-header {
+            .content-project-indiv-header {
+                .mockup-project {
+                    #project1 {
+                        height: 50%;
+                    }
+                }
+            }
         }
     }
 }
@@ -374,7 +424,7 @@ body {
 
     .biographie {
         background-color: $color3;
-        height: 70vh;
+        height: 85vh;
         position: relative;
         width: calc(100% + 70px);
         margin: -50px 0 100px -50px;
@@ -829,9 +879,15 @@ body {
 @media screen and (max-width: 1280px){
     .a-propos-header{
         .biographie{
-            height:80vh;
+            overflow-y: hidden;
+            height:90vh;
+            p{
+                font-size: 16px;
+            }
+
         }
     }
+
 }
 
 // @media screen and (max-width: 1280px){
@@ -871,6 +927,27 @@ body {
             height: 103px;
         }
     }
+
+    .a-propos-header{
+        .biographie{
+            overflow-y: hidden;
+            height:90vh;
+            p{
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .content-project-indiv {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .content-project-indiv-header {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -907,8 +984,15 @@ body {
 
     .a-propos-header{
         .biographie{
+            overflow-y: hidden;
             height:80vh;
-        } 
+            p{
+                font-size: 14px;
+                padding-left: 60px;
+                padding-right: 10px;
+            }
+
+        }
     }
 
     .projects {
@@ -985,16 +1069,29 @@ body {
 }
 
 @media screen and (max-width: 685px) {
-  height :100vh;
+    .project-header {
+        .project-indiv-header {
+            .content-project-indiv-header {
+                .title-line::after {
+                    display: none !important;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 650px) {
     .a-propos-header{
         .biographie{
+            overflow-y: hidden;
+            height:90vh;
             p{
-                font-size: 15px;
+                font-size: 14px;
+                padding-left: 60px;
+                padding-right: 10px;
             }
-        } 
+
+        }
     }
 
     .projects {
@@ -1038,14 +1135,15 @@ body {
 
     .a-propos-header{
         .biographie{
-            // height:100vh;
+            overflow-y: hidden;
+            height:100vh;
             p{
-                // font-size: 13px;
-                padding-left:50px;
-                padding-right:0;
+                font-size: 14px;
+                padding-left: 60px;
+                padding-right: 10px;
             }
-            
-        } 
+
+        }
     }
 
     .projects {
@@ -1122,12 +1220,47 @@ body {
 
     .a-propos-header{
         .biographie{
-            // height:100vh;
+            overflow-y: hidden;
+            height:110vh;
             p{
-                 font-size: 14px;
+             font-size: 14px;
+                padding-left: 60px;
+                padding-right: 10px;
             }
             
         } 
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .a-propos-header{
+        .biographie{
+            overflow-y: hidden;
+            height:120vh;
+            p{
+                font-size: 14px;
+                padding-left: 60px;
+                padding-right: 10px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .a-propos-header{
+        .biographie{
+            overflow-y: hidden;
+            height:130vh;
+            p{
+                font-size: 14px;
+                padding-left: 60px;
+                padding-right: 10px;
+            }
+
+        }
     }
 }
 /*-----------------------------------------------------------------------*/
