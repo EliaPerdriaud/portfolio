@@ -1212,8 +1212,8 @@ body {
 }
 
 /* line 1399, style.scss */
-.social-media-list li:hover a {
-  color: #000;
+.social-media-list a {
+  color: white;
 }
 
 /* line 1404, style.scss */
