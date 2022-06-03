@@ -955,9 +955,10 @@ body {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
   width: 100%;
 }
-/* line 1140, style.scss */
+/* line 1141, style.scss */
 .direct-contact-container h2 {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
@@ -965,7 +966,7 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-/* line 1148, style.scss */
+/* line 1149, style.scss */
 .direct-contact-container .underline-title {
   width: 80px;
   height: 3px;
@@ -976,70 +977,70 @@ body {
 }
 
 /* Location, Phone, Email Section */
-/* line 1161, style.scss */
+/* line 1162, style.scss */
 .contact-list {
   list-style-type: none;
   margin-left: 30px;
   padding-right: 20px;
 }
 
-/* line 1167, style.scss */
+/* line 1168, style.scss */
 .list-item {
   line-height: 4;
 }
-/* line 1169, style.scss */
+/* line 1170, style.scss */
 .list-item svg {
   height: 30px;
   fill: #D47964;
 }
 
-/* line 1175, style.scss */
+/* line 1176, style.scss */
 .list-item:hover svg {
   fill: black;
 }
 
-/* line 1180, style.scss */
+/* line 1181, style.scss */
 .contact-text {
   letter-spacing: 1.9px;
   color: #D47964;
 }
 
-/* line 1185, style.scss */
+/* line 1186, style.scss */
 .place {
   margin-left: 62px;
 }
 
-/* line 1189, style.scss */
+/* line 1190, style.scss */
 .phone {
   margin-left: 56px;
 }
 
-/* line 1193, style.scss */
+/* line 1194, style.scss */
 .gmail {
   margin-left: 53px;
 }
 
-/* line 1197, style.scss */
+/* line 1198, style.scss */
 .contact-text a {
   color: #D47964;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
-/* line 1203, style.scss */
+/* line 1204, style.scss */
 .contact-text a:hover {
   color: black;
   text-decoration: none;
 }
 
-/* line 1209, style.scss */
+/* line 1210, style.scss */
 .contact-icon svg {
   padding: 15px;
   fill: white;
 }
 
 /* Social Media Icons */
-/* line 1217, style.scss */
+/* line 1218, style.scss */
 .social-media-list {
   position: relative;
   font-size: 22px;
@@ -1049,7 +1050,7 @@ body {
   padding: 0;
 }
 
-/* line 1228, style.scss */
+/* line 1229, style.scss */
 .social-media-list li {
   position: relative;
   display: inline-block;
@@ -1063,7 +1064,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-/* line 1241, style.scss */
+/* line 1242, style.scss */
 .social-media-list li:after {
   content: '';
   position: absolute;
@@ -1078,64 +1079,64 @@ body {
   transition: all .2s ease-in-out;
 }
 
-/* line 1255, style.scss */
+/* line 1256, style.scss */
 .social-media-list li:hover {
   background-color: black;
 }
 
-/* line 1259, style.scss */
+/* line 1260, style.scss */
 .social-media-list li:hover:after {
   opacity: 1;
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
 
-/* line 1265, style.scss */
+/* line 1266, style.scss */
 .social-media-list li:hover a {
   color: #000;
 }
 
-/* line 1270, style.scss */
+/* line 1271, style.scss */
 hr {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
 /*-------------FOOTER------------------*/
-/* line 1275, style.scss */
+/* line 1276, style.scss */
 .portfolio-footer {
   background-image: url(../img/fond-footer.png);
   height: 219px;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: -130px;
 }
 
-/* line 1283, style.scss */
+/* line 1284, style.scss */
 .footer {
   background-color: #E4B8AB;
 }
-/* line 1286, style.scss */
+/* line 1287, style.scss */
 .footer .footer-content {
   padding-bottom: 50px;
   padding-top: 0px;
   padding-left: 100px;
   padding-right: 100px;
 }
-/* line 1293, style.scss */
+/* line 1294, style.scss */
 .footer .footer-content .footer1 {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 1300, style.scss */
+/* line 1301, style.scss */
 .footer .footer-content .footer1 .logo-footer .logo {
   height: 15vh;
 }
-/* line 1307, style.scss */
+/* line 1308, style.scss */
 .footer .footer-content .footer1 .menu-footer {
   display: flex;
 }
-/* line 1310, style.scss */
+/* line 1311, style.scss */
 .footer .footer-content .footer1 .menu-footer a {
   color: #D47964;
   text-align: center;
@@ -1145,28 +1146,28 @@ hr {
   font-size: 14px;
   font-weight: 600;
 }
-/* line 1320, style.scss */
+/* line 1321, style.scss */
 .footer .footer-content .footer1 .menu-footer a:hover {
   color: white;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 1337, style.scss */
+  /* line 1338, style.scss */
   .footer .footer-content .footer1 {
     flex-direction: column;
   }
-  /* line 1342, style.scss */
+  /* line 1343, style.scss */
   .footer .footer-content .footer1 .menu-footer .text-menu {
     padding: 32px;
     justify-content: space-between;
   }
 }
 @media screen and (max-width: 611px) {
-  /* line 1358, style.scss */
+  /* line 1359, style.scss */
   .footer .footer-content .footer1 .menu-footer {
     flex-direction: column;
   }
-  /* line 1361, style.scss */
+  /* line 1362, style.scss */
   .footer .footer-content .footer1 .menu-footer a {
     padding: 30px;
   }
