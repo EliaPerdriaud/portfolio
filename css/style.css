@@ -14,8 +14,48 @@ body {
   overflow-x: hidden;
 }
 
+/* line 31, style.scss */
+.div-title-hover-effect {
+  display: grid;
+  place-content: center;
+}
+/* line 35, style.scss */
+.div-title-hover-effect .title-hover-effect {
+  position: relative;
+  padding: 10;
+}
+/* line 39, style.scss */
+.div-title-hover-effect .title-hover-effect:hover {
+  color: white;
+  transition: transform .6s ease;
+}
+/* line 44, style.scss */
+.div-title-hover-effect .title-hover-effect::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+/* line 49, style.scss */
+.div-title-hover-effect .title-hover-effect:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* line 54, style.scss */
+.div-title-hover-effect .title-hover-effect::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #D47964;
+  z-index: -1;
+  transition: transform .6s ease;
+}
+
 /* ----------------------- TOPNAV ----------------------- */
-/* line 60, style.scss */
+/* line 101, style.scss */
 .topnav {
   flex-direction: row;
   background-color: #E4B8AB;
@@ -23,35 +63,35 @@ body {
   justify-content: space-around;
   height: 20vh;
 }
-/* line 67, style.scss */
+/* line 108, style.scss */
 .topnav .img-logo {
   display: flex;
   align-items: center;
   height: 100%;
   padding: 30px 0px;
 }
-/* line 74, style.scss */
+/* line 115, style.scss */
 .topnav #burger-menu {
   display: none;
 }
-/* line 79, style.scss */
+/* line 120, style.scss */
 .topnav #burger-icon {
   display: none;
 }
-/* line 83, style.scss */
+/* line 124, style.scss */
 .topnav .menu {
   display: flex;
   align-items: center;
 }
-/* line 88, style.scss */
+/* line 129, style.scss */
 .topnav .menu .box-menu {
   display: flex;
 }
-/* line 91, style.scss */
+/* line 132, style.scss */
 .topnav .menu .box-menu .text-menu {
   padding: 56px 33px;
 }
-/* line 94, style.scss */
+/* line 135, style.scss */
 .topnav .menu .box-menu .text-menu a {
   color: #D47964;
   text-align: center;
@@ -61,22 +101,22 @@ body {
   font-weight: 600;
   padding: 20px;
 }
-/* line 104, style.scss */
+/* line 145, style.scss */
 .topnav .menu .box-menu .text-menu a:hover {
   background-color: #D47964;
   color: #E4B8AB;
 }
 
 @media screen and (max-width: 958px) {
-  /* line 121, style.scss */
+  /* line 162, style.scss */
   .topnav {
     justify-content: center;
   }
-  /* line 124, style.scss */
+  /* line 165, style.scss */
   .topnav .menu label {
     display: block;
   }
-  /* line 128, style.scss */
+  /* line 169, style.scss */
   .topnav .menu .box-menu {
     display: none;
     flex-direction: column;
@@ -91,14 +131,14 @@ body {
     background-color: white;
     transform: translateX(100%);
   }
-  /* line 142, style.scss */
+  /* line 183, style.scss */
   .topnav .menu .box-menu .text-menu {
     justify-content: center;
     display: flex;
     padding: 52px 0px;
   }
 
-  /* line 151, style.scss */
+  /* line 192, style.scss */
   .menu #burger-icon {
     display: block;
     font-size: 40px;
@@ -107,19 +147,39 @@ body {
     z-index: 3;
     color: #D47964;
   }
-  /* line 159, style.scss */
+  /* line 200, style.scss */
   .menu #burger-icon:hover {
     cursor: pointer;
   }
 
-  /* line 166, style.scss */
+  /* line 207, style.scss */
   #burger-menu:checked ~ .box-menu {
     display: block;
     transform: translate(0);
   }
 }
+/* line 214, style.scss */
+.portfolio-button {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  color: #D47964;
+  border-color: #D47964;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+/* line 227, style.scss */
+.portfolio-button:hover {
+  background-color: #D47964;
+  color: white;
+  transition: 0.5s;
+}
+
 /*-------------------APPARITION----------------------*/
-/* line 173, style.scss */
+/* line 236, style.scss */
 .apparition {
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -136,7 +196,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* line 190, style.scss */
+/* line 253, style.scss */
 .apparition.animated {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -145,7 +205,7 @@ body {
 }
 
 /* ----------------------- Header ----------------------- */
-/* line 197, style.scss */
+/* line 260, style.scss */
 .portfolio-header {
   background-image: url(../img/fond-header-autre.png);
   height: 203px;
@@ -153,7 +213,7 @@ body {
 }
 
 /* ----------------------- Page d'accueil ----------------------- */
-/* line 205, style.scss */
+/* line 268, style.scss */
 .home-header {
   background-image: url(../img/fond-header.png);
   height: 627px;
@@ -161,7 +221,7 @@ body {
   padding-left: 150px;
   padding-right: 150px;
 }
-/* line 213, style.scss */
+/* line 276, style.scss */
 .home-header h1 {
   font-size: 70px;
   color: #D47964;
@@ -171,44 +231,44 @@ body {
 }
 
 /*Presentation*/
-/* line 224, style.scss */
+/* line 287, style.scss */
 .home-presentation {
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 260px;
   padding-bottom: 260px;
 }
-/* line 234, style.scss */
+/* line 297, style.scss */
 .home-presentation h2 {
   font-size: 40px;
   color: #D47964;
   text-align: center;
 }
-/* line 240, style.scss */
+/* line 303, style.scss */
 .home-presentation .div-title-hover-effect {
   display: grid;
   place-content: center;
 }
-/* line 244, style.scss */
+/* line 307, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect {
   position: relative;
 }
-/* line 247, style.scss */
+/* line 310, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover {
   color: white;
   transition: transform .6s ease;
 }
-/* line 252, style.scss */
+/* line 315, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-/* line 257, style.scss */
+/* line 320, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-/* line 262, style.scss */
+/* line 325, style.scss */
 .home-presentation .div-title-hover-effect .title-hover-effect::before {
   content: " ";
   display: block;
@@ -222,13 +282,13 @@ body {
   z-index: -1;
   transition: transform .6s ease;
 }
-/* line 278, style.scss */
+/* line 341, style.scss */
 .home-presentation p {
   text-align: center;
   line-height: 1.8em;
   font-size: 20px;
 }
-/* line 284, style.scss */
+/* line 347, style.scss */
 .home-presentation .portfolio-button {
   display: block;
   margin: auto;
@@ -241,7 +301,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 297, style.scss */
+/* line 360, style.scss */
 .home-presentation .portfolio-button:hover {
   background-color: #D47964;
   color: white;
@@ -249,11 +309,11 @@ body {
 }
 
 /* ----------------------- Page a propos ----------------------- */
-/* line 309, style.scss */
+/* line 372, style.scss */
 .a-propos-header {
   overflow-x: hidden;
 }
-/* line 312, style.scss */
+/* line 375, style.scss */
 .a-propos-header .biographie {
   background-color: #E4B8AB;
   height: 70vh;
@@ -263,7 +323,7 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 321, style.scss */
+/* line 384, style.scss */
 .a-propos-header .biographie h2 {
   transform: rotate(3deg);
   margin-left: 90px;
@@ -273,16 +333,16 @@ body {
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 331, style.scss */
+/* line 394, style.scss */
 .a-propos-header .biographie h2::after {
   content: "";
   background-color: #D47964;
-  width: 8%;
+  width: 50%;
   margin-top: 55px;
   height: 3px;
   position: absolute;
 }
-/* line 341, style.scss */
+/* line 404, style.scss */
 .a-propos-header .biographie p {
   transform: rotate(3deg);
   margin: 50px auto;
@@ -296,7 +356,7 @@ body {
   text-align: center;
 }
 
-/* line 357, style.scss */
+/* line 420, style.scss */
 .title-line {
   color: #D47964;
   justify-content: center;
@@ -304,23 +364,23 @@ body {
   font-size: 40px;
   font-family: 'Longline Quart FREE';
 }
-/* line 365, style.scss */
+/* line 428, style.scss */
 .title-line::after {
   content: "";
   background-color: #D47964;
-  width: 8%;
+  width: 50%;
   margin-top: 55px;
   height: 3px;
   position: absolute;
 }
 
-/* line 376, style.scss */
+/* line 439, style.scss */
 .timeline {
   margin: 50px auto;
   position: relative;
   max-width: 70vw;
 }
-/* line 381, style.scss */
+/* line 444, style.scss */
 .timeline:before {
   background-color: #D47964;
   content: '';
@@ -332,11 +392,11 @@ body {
   height: 100%;
 }
 
-/* line 393, style.scss */
+/* line 456, style.scss */
 .timeline-event {
   position: relative;
 }
-/* line 398, style.scss */
+/* line 461, style.scss */
 .timeline-event:hover .timeline-event-icon {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -344,39 +404,39 @@ body {
   transform: rotate(-45deg);
   background-color: black;
 }
-/* line 403, style.scss */
+/* line 466, style.scss */
 .timeline-event:hover .timeline-event-thumbnail {
   -moz-box-shadow: inset 40em 0 0 0 black;
   -webkit-box-shadow: inset 40em 0 0 0 black;
   box-shadow: inset 40em 0 0 0 black;
 }
 
-/* line 409, style.scss */
+/* line 472, style.scss */
 .timeline-event-copy {
   padding: 2em;
   position: relative;
   top: -1.875em;
   left: 4em;
 }
-/* line 415, style.scss */
+/* line 478, style.scss */
 .timeline-event-copy h3 {
   font-size: 1.75em;
 }
-/* line 419, style.scss */
+/* line 482, style.scss */
 .timeline-event-copy h4 {
   font-size: 1.2em;
   margin-bottom: 1.2em;
 }
-/* line 424, style.scss */
+/* line 487, style.scss */
 .timeline-event-copy strong {
   font-weight: 700;
 }
-/* line 428, style.scss */
+/* line 491, style.scss */
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
   padding-bottom: 1.2em;
 }
 
-/* line 433, style.scss */
+/* line 496, style.scss */
 .timeline-event-icon {
   -moz-transition: -moz-transform 0.2s ease-in;
   -o-transition: -o-transform 0.2s ease-in;
@@ -397,7 +457,7 @@ body {
   height: 1em;
 }
 
-/* line 448, style.scss */
+/* line 511, style.scss */
 .timeline-event-thumbnail {
   -moz-transition: box-shadow 0.5s ease-in 0.1s;
   -o-transition: box-shadow 0.5s ease-in 0.1s;
@@ -415,14 +475,21 @@ body {
   padding: 0.25em 1em 0.2em 1em;
 }
 
+@media screen and (max-width: 610px) {
+  /* line 524, style.scss */
+  .timeline {
+    margin: 50px auto;
+    margin-right: 100px;
+  }
+}
 /* ----------------------- Projets ----------------------- */
-/* line 463, style.scss */
+/* line 535, style.scss */
 .projects {
   overflow: hidden;
   /*Projet 1*/
   /*Projet2*/
 }
-/* line 466, style.scss */
+/* line 538, style.scss */
 .projects h2 {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
@@ -430,7 +497,7 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-/* line 474, style.scss */
+/* line 546, style.scss */
 .projects .underline-title {
   width: 80px;
   height: 3px;
@@ -439,7 +506,7 @@ body {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 485, style.scss */
+/* line 557, style.scss */
 .projects .div-project {
   background-color: #E4B8AB;
   position: relative;
@@ -449,16 +516,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 494, style.scss */
+/* line 566, style.scss */
 .projects .div-project .div-project-content {
   width: 100%;
 }
-/* line 497, style.scss */
+/* line 569, style.scss */
 .projects .div-project .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 501, style.scss */
+/* line 573, style.scss */
 .projects .div-project .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -468,7 +535,7 @@ body {
   margin: auto;
   padding-left: 50px;
 }
-/* line 512, style.scss */
+/* line 584, style.scss */
 .projects .div-project .div-project-content .right {
   background-color: rgba(184, 148, 137, 0.8);
   height: 100%;
@@ -479,7 +546,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 523, style.scss */
+/* line 595, style.scss */
 .projects .div-project .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -487,22 +554,22 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 531, style.scss */
+/* line 603, style.scss */
 .projects .div-project .div-project-content .right .right-content h3 {
   color: white;
   text-transform: uppercase;
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  line-height: 2em;
+  line-height: 1.2em;
 }
-/* line 540, style.scss */
+/* line 612, style.scss */
 .projects .div-project .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: white;
   text-align: center;
 }
-/* line 546, style.scss */
+/* line 618, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -516,13 +583,13 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 560, style.scss */
+/* line 632, style.scss */
 .projects .div-project .div-project-content .right .right-content .portfolio-button:hover {
   background-color: white;
   color: #D47964;
   transition: 0.5s;
 }
-/* line 577, style.scss */
+/* line 649, style.scss */
 .projects .div-project2 {
   background-color: white;
   position: relative;
@@ -532,16 +599,16 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 586, style.scss */
+/* line 658, style.scss */
 .projects .div-project2 .div-project-content {
   width: 100%;
 }
-/* line 589, style.scss */
+/* line 661, style.scss */
 .projects .div-project2 .div-project-content .mockup-project {
   display: flex;
   justify-content: center;
 }
-/* line 593, style.scss */
+/* line 665, style.scss */
 .projects .div-project2 .div-project-content .mockup-project #project1 {
   display: block;
   position: absolute;
@@ -551,7 +618,7 @@ body {
   margin: auto;
   padding-left: 50px;
 }
-/* line 604, style.scss */
+/* line 676, style.scss */
 .projects .div-project2 .div-project-content .right {
   background-color: rgba(255, 255, 255, 0.8);
   height: 100%;
@@ -562,7 +629,7 @@ body {
   flex-direction: column;
   z-index: 2;
 }
-/* line 615, style.scss */
+/* line 687, style.scss */
 .projects .div-project2 .div-project-content .right .right-content {
   margin-top: auto;
   margin-bottom: auto;
@@ -570,7 +637,7 @@ body {
   margin-right: 150px;
   transform: rotate(3deg);
 }
-/* line 623, style.scss */
+/* line 695, style.scss */
 .projects .div-project2 .div-project-content .right .right-content h3 {
   color: black;
   text-transform: uppercase;
@@ -579,13 +646,13 @@ body {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 632, style.scss */
+/* line 704, style.scss */
 .projects .div-project2 .div-project-content .right .right-content p {
   line-height: 1.5em;
   color: black;
   text-align: center;
 }
-/* line 638, style.scss */
+/* line 710, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button {
   display: block;
   margin: auto;
@@ -599,7 +666,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 652, style.scss */
+/* line 724, style.scss */
 .projects .div-project2 .div-project-content .right .right-content .portfolio-button:hover {
   background-color: black;
   color: white;
@@ -607,11 +674,11 @@ body {
 }
 
 /* ----------------------- Page project seul ----------------------- */
-/* line 673, style.scss */
+/* line 745, style.scss */
 .project-header {
   overflow: hidden;
 }
-/* line 677, style.scss */
+/* line 749, style.scss */
 .project-header .project-indiv-header {
   background-color: #E4B8AB;
   height: 85vh;
@@ -621,19 +688,19 @@ body {
   padding: 0 50px 0 0;
   transform: rotate(-3deg);
 }
-/* line 686, style.scss */
+/* line 758, style.scss */
 .project-header .project-indiv-header .content-project-indiv-header {
   position: absolute;
   width: 100%;
   transform: rotate(3deg);
 }
-/* line 691, style.scss */
+/* line 763, style.scss */
 .project-header .project-indiv-header .content-project-indiv-header .mockup-project {
   display: flex;
   justify-content: center;
   height: 600px;
 }
-/* line 697, style.scss */
+/* line 769, style.scss */
 .project-header .project-indiv-header .content-project-indiv-header .title-line {
   color: #D47964;
   justify-content: center;
@@ -641,7 +708,7 @@ body {
   font-size: 50px;
   font-family: 'Longline Quart FREE';
 }
-/* line 705, style.scss */
+/* line 777, style.scss */
 .project-header .project-indiv-header .content-project-indiv-header .title-line::after {
   content: "";
   background-color: #D47964;
@@ -651,13 +718,13 @@ body {
   position: absolute;
 }
 
-/* line 720, style.scss */
+/* line 792, style.scss */
 .content-project-indiv {
   padding-right: 150px;
   padding-left: 150px;
   margin-top: 150px;
 }
-/* line 725, style.scss */
+/* line 797, style.scss */
 .content-project-indiv h2 {
   color: #D47964;
   justify-content: center;
@@ -665,7 +732,7 @@ body {
   font-size: 30px;
   font-family: 'Longline Quart FREE';
 }
-/* line 733, style.scss */
+/* line 805, style.scss */
 .content-project-indiv h2::after {
   content: "";
   background-color: #D47964;
@@ -674,14 +741,14 @@ body {
   height: 3px;
   position: absolute;
 }
-/* line 743, style.scss */
+/* line 815, style.scss */
 .content-project-indiv p {
   margin-top: 50px;
   margin-bottom: 130px;
   text-align: center;
   line-height: 1.4em;
 }
-/* line 750, style.scss */
+/* line 822, style.scss */
 .content-project-indiv .video {
   display: flex;
   justify-content: center;
@@ -689,109 +756,109 @@ body {
 
 /* ----------------------- ----------------------- ----------------------- */
 @media screen and (max-width: 1280px) {
-  /* line 759, style.scss */
+  /* line 831, style.scss */
   .a-propos-header .biographie {
     height: 80vh;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 777, style.scss */
+  /* line 849, style.scss */
   .projects
   .div-project .div-project-content .right .right-content {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  /* line 789, style.scss */
+  /* line 861, style.scss */
   .projects
   .div-project2 .div-project-content .right .right-content {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  /* line 798, style.scss */
+  /* line 870, style.scss */
   .a-propos-header .portfolio-header {
     height: 103px;
   }
 }
 @media screen and (max-width: 780px) {
-  /* line 808, style.scss */
+  /* line 880, style.scss */
   .home-header {
     padding-left: 40px;
     padding-right: 40px;
   }
-  /* line 812, style.scss */
+  /* line 884, style.scss */
   .home-header h1 {
     font-size: 55px;
   }
 
-  /* line 817, style.scss */
+  /* line 889, style.scss */
   .home-presentation {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 100px;
     padding-bottom: 160px;
   }
-  /* line 825, style.scss */
+  /* line 897, style.scss */
   .home-presentation .div-title-hover-effect h2 {
     font-size: 40px;
   }
-  /* line 830, style.scss */
+  /* line 902, style.scss */
   .home-presentation p {
     line-height: 1.4em;
     font-size: 16px;
   }
 
-  /* line 837, style.scss */
+  /* line 909, style.scss */
   .a-propos-header .biographie {
     height: 80vh;
   }
 
-  /* line 844, style.scss */
+  /* line 916, style.scss */
   .projects .div-project {
     height: 105vh;
   }
-  /* line 851, style.scss */
+  /* line 923, style.scss */
   .projects .div-project .div-project-content .mockup-project #project1 {
     height: 65%;
     margin-top: 100px;
   }
-  /* line 857, style.scss */
+  /* line 929, style.scss */
   .projects .div-project .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 863, style.scss */
+  /* line 935, style.scss */
   .projects .div-project .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 867, style.scss */
+  /* line 939, style.scss */
   .projects .div-project .div-project-content .right .right-content p {
     line-height: 1.3em;
   }
-  /* line 877, style.scss */
+  /* line 949, style.scss */
   .projects .div-project2 {
     height: 105vh;
   }
-  /* line 884, style.scss */
+  /* line 956, style.scss */
   .projects .div-project2 .div-project-content .mockup-project #project1 {
     height: 65%;
     margin-top: 100px;
   }
-  /* line 890, style.scss */
+  /* line 962, style.scss */
   .projects .div-project2 .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 896, style.scss */
+  /* line 968, style.scss */
   .projects .div-project2 .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 900, style.scss */
+  /* line 972, style.scss */
   .projects .div-project2 .div-project-content .right .right-content p {
     line-height: 1.3em;
   }
@@ -800,17 +867,17 @@ body {
   height: 100vh;
 }
 @media screen and (max-width: 650px) {
-  /* line 922, style.scss */
+  /* line 994, style.scss */
   .a-propos-header .biographie p {
     font-size: 15px;
   }
 
-  /* line 933, style.scss */
+  /* line 1005, style.scss */
   .projects .div-project .div-project-content .mockup-project #project1 {
     height: 58%;
     margin-top: 150px;
   }
-  /* line 944, style.scss */
+  /* line 1016, style.scss */
   .projects .div-project2 .div-project-content .mockup-project #project1 {
     height: 58%;
     margin-top: 150px;
@@ -818,58 +885,58 @@ body {
 }
 /*--------------------------------------------------------------------*/
 @media screen and (max-width: 540px) {
-  /* line 958, style.scss */
+  /* line 1030, style.scss */
   .home-header {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 962, style.scss */
+  /* line 1034, style.scss */
   .home-header h1 {
     font-size: 45px;
   }
 
-  /* line 970, style.scss */
+  /* line 1042, style.scss */
   .a-propos-header .biographie p {
     padding-left: 50px;
     padding-right: 0;
   }
 
-  /* line 987, style.scss */
+  /* line 1059, style.scss */
   .projects .div-project .div-project-content .mockup-project #project1 {
-    height: 68%;
+    padding-left: 90px;
   }
-  /* line 992, style.scss */
+  /* line 1064, style.scss */
   .projects .div-project .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 998, style.scss */
+  /* line 1070, style.scss */
   .projects .div-project .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 1002, style.scss */
+  /* line 1074, style.scss */
   .projects .div-project .div-project-content .right .right-content p {
     line-height: 1.3em;
     font-size: 15px;
   }
-  /* line 1019, style.scss */
+  /* line 1091, style.scss */
   .projects .div-project2 .div-project-content .mockup-project #project1 {
-    height: 68%;
+    padding-left: 90px;
   }
-  /* line 1024, style.scss */
+  /* line 1097, style.scss */
   .projects .div-project2 .div-project-content .right {
     height: 50%;
     width: 100%;
     bottom: 0px;
   }
-  /* line 1030, style.scss */
+  /* line 1103, style.scss */
   .projects .div-project2 .div-project-content .right .right-content {
     margin-left: 60px;
     margin-right: 60px;
   }
-  /* line 1034, style.scss */
+  /* line 1107, style.scss */
   .projects .div-project2 .div-project-content .right .right-content p {
     line-height: 1.3em;
     font-size: 15px;
@@ -877,8 +944,230 @@ body {
 }
 /*--------------------------------------------------------------------*/
 @media screen and (max-width: 470px) {
-  /* line 1053, style.scss */
+  /* line 1126, style.scss */
   .a-propos-header .biographie p {
     font-size: 14px;
+  }
+}
+/*-----------------------------------------------------------------------*/
+/* line 1134, style.scss */
+.direct-contact-container {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/* line 1140, style.scss */
+.direct-contact-container h2 {
+  font-size: 50px;
+  font-family: 'Longline Quart FREE';
+  color: #D47964;
+  text-align: center;
+  margin-top: 10px;
+}
+/* line 1148, style.scss */
+.direct-contact-container .underline-title {
+  width: 80px;
+  height: 3px;
+  background-color: #D47964;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Location, Phone, Email Section */
+/* line 1161, style.scss */
+.contact-list {
+  list-style-type: none;
+  margin-left: 30px;
+  padding-right: 20px;
+}
+
+/* line 1167, style.scss */
+.list-item {
+  line-height: 4;
+}
+/* line 1169, style.scss */
+.list-item svg {
+  height: 30px;
+  fill: #D47964;
+}
+
+/* line 1175, style.scss */
+.list-item:hover svg {
+  fill: black;
+}
+
+/* line 1180, style.scss */
+.contact-text {
+  letter-spacing: 1.9px;
+  color: #D47964;
+}
+
+/* line 1185, style.scss */
+.place {
+  margin-left: 62px;
+}
+
+/* line 1189, style.scss */
+.phone {
+  margin-left: 56px;
+}
+
+/* line 1193, style.scss */
+.gmail {
+  margin-left: 53px;
+}
+
+/* line 1197, style.scss */
+.contact-text a {
+  color: #D47964;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+/* line 1203, style.scss */
+.contact-text a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 1209, style.scss */
+.contact-icon svg {
+  padding: 15px;
+  fill: white;
+}
+
+/* Social Media Icons */
+/* line 1217, style.scss */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 1228, style.scss */
+.social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: #D47964;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+/* line 1241, style.scss */
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px black;
+  transition: all .2s ease-in-out;
+}
+
+/* line 1255, style.scss */
+.social-media-list li:hover {
+  background-color: black;
+}
+
+/* line 1259, style.scss */
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+/* line 1265, style.scss */
+.social-media-list li:hover a {
+  color: #000;
+}
+
+/* line 1270, style.scss */
+hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*-------------FOOTER------------------*/
+/* line 1275, style.scss */
+.portfolio-footer {
+  background-image: url(../img/fond-footer.png);
+  height: 219px;
+  margin-top: 150px;
+  margin-bottom: -130px;
+}
+
+/* line 1283, style.scss */
+.footer {
+  background-color: #E4B8AB;
+}
+/* line 1286, style.scss */
+.footer .footer-content {
+  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* line 1293, style.scss */
+.footer .footer-content .footer1 {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 1300, style.scss */
+.footer .footer-content .footer1 .logo-footer .logo {
+  height: 15vh;
+}
+/* line 1307, style.scss */
+.footer .footer-content .footer1 .menu-footer {
+  display: flex;
+}
+/* line 1310, style.scss */
+.footer .footer-content .footer1 .menu-footer a {
+  color: #D47964;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 76px 53px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* line 1320, style.scss */
+.footer .footer-content .footer1 .menu-footer a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 1337, style.scss */
+  .footer .footer-content .footer1 {
+    flex-direction: column;
+  }
+  /* line 1342, style.scss */
+  .footer .footer-content .footer1 .menu-footer .text-menu {
+    padding: 32px;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 611px) {
+  /* line 1358, style.scss */
+  .footer .footer-content .footer1 .menu-footer {
+    flex-direction: column;
+  }
+  /* line 1361, style.scss */
+  .footer .footer-content .footer1 .menu-footer a {
+    padding: 30px;
   }
 }

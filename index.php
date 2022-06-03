@@ -33,57 +33,22 @@ require_once 'layout/header.php'?>
         </div>
 
         <div class="projects">
-            <h2>Projets</h2>
+            <div class="div-title-hover-effect">
+                <h2 class="title-hover-effect">Projets</h2>
 
-            <div class="underline-title"></div>
-
-            <div class="div-project" id="apparition">
-                <div class="div-project-content">
-                    <div class="mockup-project">
-                        <img id="project1" src="./img/eclaireur.png" alt="project1"> 
-                    </div>
-                    <div class="right">
-                        <div class="right-content">
-                            <h3>L'éclaireur des coiffeurs</h3>
-                            <p>Ce projet a consisté à faire une proposition fictive, de refonte du site web de l’éclaireur des coiffeurs. Un audit, ainsi qu'un benchmark ont été réalisés. A la suite desquels, une proposition de maquette à été faite pour cette refonte.</p>
-                  
-                            <button class="portfolio-button" type="button" onclick="window.location.href = './eclaireur.php';">
-                                Voir le projet
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="div-project2">
-                <div class="div-project-content">
-                    <div class="mockup-project">
-                        <img id="project1" src="./img/wknd.png" alt="project1"> 
-                    </div>
-                    <div class="right">
-                        <div class="right-content">
-                            <h3>WKND</h3>
-                            <p>  Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. </p>
-                            <button class="portfolio-button" type="button">
-                                Voir le projet
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
+                <div class="underline-title"></div>
             </div>
 
             <div class="div-project">
                 <div class="div-project-content">
                     <div class="mockup-project">
-                        <img id="project1" src="./img/motion-mds.png" alt="project1"> 
+                        <img id="project1" src="./img/egaia.png" alt="project1"> 
                     </div>
                     <div class="right">
                         <div class="right-content">
-                            <h3>Motion My Digital School</h3>
-                            <p>  Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. </p>
-                            <button class="portfolio-button" type="button">
+                            <h3>Egaïa</h3>
+                            <p>  Application ayant pour but d'aider les gens à recycler leurs déchets et à avoir un meilleur impact environnemental. </p>
+                            <button class="portfolio-button" type="button" onclick="window.location.href = './egaia.php';">
                                 Voir le projet
                             </button>
                         </div>
@@ -100,7 +65,7 @@ require_once 'layout/header.php'?>
                     <div class="right">
                         <div class="right-content">
                             <h3>Hold it</h3>
-                            <p>  Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. </p>
+                            <p> Ce projet consiste en la réalisation d'une bande annonce fictive d’un film d’action à suspens : hold-it. </p>
                             <button class="portfolio-button" type="button" onclick="window.location.href = './hold_it.php';">
                                 Voir le projet
                             </button>
@@ -110,8 +75,13 @@ require_once 'layout/header.php'?>
                 
             </div>
 
-        
         </div>
+        <button class="portfolio-button" type="button" onclick="window.location.href = './portfolio.php';">
+                Voir tous les projets
+            </button>
 
 
 </body>
+
+<?php 
+require_once 'layout/footer.php'?>

@@ -6,7 +6,9 @@ require_once 'layout/header.php' ?>
     <div class="portfolio-header">
     </div>
     <div class="biographie">
-        <h2>Biographie</h2>
+    <div class="div-title-hover-effect">
+        <h2 class="title-hover-effect">Biographie</h2>
+    </div>
         <p> Actuellement en troisième année de bachelor webdesigner à My Digital School Lyon, je vais intégrer, dès la rentrée prochaine Master of Business Administration UI/UX, de la même école. 
             En parallèle de cette formation, j’effectue mon alternance en tant que webdesigner UI/UX, chez MentalWorks, une agence web basée à Compiègne, dans l’Oise. 
             <br>
@@ -19,7 +21,9 @@ require_once 'layout/header.php' ?>
         </p>
     </div>
 </div>
-<h2 class="title-line">Parcours</h2>
+<div class="div-title-hover-effect">
+<h2 class="title-line title-hover-effect">Parcours</h2>
+</div>
 <ul class="timeline">
 <li class="timeline-event">
         <label class="timeline-event-icon"></label>
@@ -51,3 +55,6 @@ require_once 'layout/header.php' ?>
     
 </ul>
 </body>
+
+<?php 
+require_once 'layout/footer.php'?>

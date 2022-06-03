@@ -50,7 +50,7 @@ require_once 'layout/header.php'?>
             <div class="col-lg-12">
             <img
                 src="./img/eclaireur-desktop.png"
-                alt="Dark Roast Iced Coffee"
+                alt="maquette-eclaireur"
                 class="w-100 shadow-1-strong rounded"
                 width="450px"
             />
@@ -60,3 +60,5 @@ require_once 'layout/header.php'?>
 
     </div>
 </body>
+<?php 
+require_once 'layout/footer.php'?>

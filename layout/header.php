@@ -48,7 +48,7 @@
 
     <div class="topnav">
         <div class="logo">
-            <img class="img-logo" src="img/Logo-Elia-Rose.png" alt="logo">
+        <a href="./index.php"><img class="img-logo" src="img/Logo-Elia-Rose.png" alt="logo"></a>
         </div>
 
         <div class="menu">
@@ -58,7 +58,7 @@
                 <div class="text-menu"><a href="./index.php">Accueil</a></div>
                 <div class="text-menu"><a href="./a_propos.php">A propos</a></div>
                 <div class="text-menu"><a href="./portfolio.php">Portfolio</a></div>
-                <div class="text-menu"><a href="#">Contact</a></div>
+                <div class="text-menu"><a href="./contact.php">Contact</a></div>
             </div>
         </div>
     </div>

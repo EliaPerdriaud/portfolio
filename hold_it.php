@@ -50,3 +50,5 @@ require_once 'layout/header.php'?>
 
     </div>
 </body>
+<?php 
+require_once 'layout/footer.php'?>
